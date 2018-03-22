@@ -7,7 +7,7 @@
     <div class="container-fliud" style="overflow-x: hidden;">
         <div class="row justify-content-md-center">
             <div class="col-12 " style="height: 350px">
-                <img src="..." class="img-fluid" alt="Responsive image">
+                <img src="pictures/landinghome.jpg" class="img-fluid" alt="Responsive image" style="height:550px; width:3000px;">
             </div>
         </div>
         <div class="row justify-content-md-center" style="position:relative;">
@@ -15,8 +15,8 @@
                 <div class="card">
                     <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title display-4">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title display-4">..Begin</h5>
+                        <p class="card-text">Your fitness journey with GymHub will change the way you workout forever,no longer will you lose track of any of your progress or the goals you have set for yourself</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
@@ -60,4 +60,4 @@
             </div>
         </div>
     </div>
-</asp:Content>
+ </asp:Content>
