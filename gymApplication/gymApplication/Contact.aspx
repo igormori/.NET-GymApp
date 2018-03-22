@@ -7,6 +7,7 @@
     <div class="container">
 
         <div class="row justify-content-center">
+            <a href="Contact.aspx">Contact.aspx</a>
             <h1 class="display-3">Contact us</h1>
 
         </div>
