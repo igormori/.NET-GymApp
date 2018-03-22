@@ -6,11 +6,11 @@
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-fliud" style="overflow-x: hidden;">
         <div class="row justify-content-md-center">
-            <div class="col-12 " style="background-color: navajowhite; height: 350px">
-                <h1>img goes here</h1>
+            <div class="col-12 " style="height: 350px">
+                <img src="..." class="img-fluid" alt="Responsive image">
             </div>
         </div>
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center" style="position:relative;">
             <div class="card-deck">
                 <div class="card">
                     <img class="card-img-top" src="..." alt="Card image cap">
@@ -60,5 +60,4 @@
             </div>
         </div>
     </div>
-
 </asp:Content>
