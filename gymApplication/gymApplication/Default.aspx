@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-fuild" style="overflow-x: hidden;">
         <div class="row justify-content-md-center">
@@ -34,7 +33,7 @@
         </div>
         <div style="height: 30px;"></div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-12 col-lg-6">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -46,8 +45,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-6 col-lg-6">
-                <h1 class="display-1">project description</h1>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div style="height: 20px;"></div>
+                <h1 class="display-3">project description</h1>
+                <div style="height: 20px;"></div>
+                <p class="border lead">
+                    Ever started a workout routine and completey forgot about it half-way through the week?
+                    This app was created to help users keep track of thier progress in the gym by
+                    providing them with a list of workouts. At the end of each  week users can
+                    view thier weekly and montly progress. Users can chooes from a wide varitey of pre configured workouts to get started right away.
+                </p>
+                <div style="height: 20px;"></div>
             </div>
         </div>
     </div>
