@@ -16,7 +16,7 @@ namespace gymApplication
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-          
+
 
             MessageArea.Visible = false;
 
@@ -35,7 +35,7 @@ namespace gymApplication
 
             // this will be the massege to send to support confirmation page 
 
-            if (RequiredFieldValidator1.IsValid)
+            if (RequiredFieldValidator1.IsValid && RequiredFieldValidator2.IsValid)
             {
                 Response.Redirect("loginConfirmation.aspx?response=YouAreLoggedIn");
             }
@@ -43,7 +43,7 @@ namespace gymApplication
             {
                 Response.Redirect("loginConfirmation.aspx?response=Loginfailed");
             }
-           
+
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)

@@ -27,7 +27,7 @@
     <!---------------------------- NavBar ---------------------------------------------->
 
      <nav class="navbar navbar-expand-lg navbar-light " style="background-color: lightslategrey;">
-        <a id="Brand" runat="server" class="navbar-brand" href="~">
+        <a id="Brand" runat="server" class="navbar-brand" href="Default.aspx">
             <img src="pictures/logo.png" width="80px" length="80px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,8 +77,18 @@
                 <div class="row py-4 d-flex align-items-center">
                     <!--Grid column-->
                     <div class="col-12 col-md-5 text-left mb-4 mb-md-0">
-                        <h6><a href="Contact.aspx"><strong>Contact Us</strong> <strong>|</strong> <a href="AboutUs.aspx"><strong>About Us</strong></h6>
-                          © 2017 Copyright:<strong> GymApp</strong>
+                        <h6><a href="Contact.aspx"><strong>Contact Us</strong></a> <strong>|</strong> <a href="AboutUs.aspx"><strong>About Us</strong></h6></a>
+                      <b ID="Copyright" runat="server" class="navbar-text">&copy; Copyright 2018</b>
+                        </br>
+                        <b>Igor Mori | 101045762</b>
+                        </br>
+                        <b>Sherwayne Walrond | 100612847</b>
+                        </br>
+                        <b>Fortune Creig Phiri | 101087294</b>
+                        </br>
+                        <b>Dindyal Mursingh | 101045762</b>
+                        </br>
+                        <b>Igor Mori | 101045762</b>
                     </div>
                     <!--Grid column-->
                     <!--Grid column-->
