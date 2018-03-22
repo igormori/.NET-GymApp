@@ -7,12 +7,12 @@
     <div class="container" style="overflow-x: hidden;">
         <div style="height: 20px;"></div>
         <div class="row">
-            <div class="col-sm-12 col-md-5 col-xs-12">
+            <div class="col-sm-12 col-md-5 col-lg-3">
                 <div class="card-group">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="..." alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title display-4">Your Name</h5>
+                            <h3 class="card-title">Sherweezy</h3>
                             <p class="card-text">
                                 This is your personal homepage please feel free to use the graphs and calendar provided to track your
                                 progress!
@@ -24,12 +24,12 @@
                             <li class="list-group-item">Gym name and Location: Fit 4 Less, Brampton</li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Profile</a>
+                            <a href="profile.aspx" class="card-link">Profile</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-7">
+            <div class="col-sm-12 col-md-7 mx-auto">
                 <div style="height: 20px;"></div>
                 <div class="row">
                     <div class="col-10 col-sm-10">
@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-xs-12">
                         <div class="d-flex align-content-around flex-wrap">
-                            <div class="order-1 p-2 border">Day:</div>
+                            
                             <div class="order-2 p-2 border">Monday</div>
                             <div class="order-3 p-2 border">Tuesday</div>
                             <div class="order-4 p-2 border">Wednesday</div>
@@ -50,12 +50,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row" style="height: 20px;"></div>
-        <div class="row justify-content-md-center">
+                 <div class="row justify-content-md-center">
             <div class="col-md-6 col-sm-12">
-                <h1 class="display-3">Weekly Progress</h1>
+                <h1 class="display-5">Weekly Progress</h1>
             </div>
         </div>
         <div class="row">
@@ -102,5 +99,9 @@
                 });
             </script>
         </div>
+            </div>
+        </div>
+       
+       
     </div>
 </asp:Content>
