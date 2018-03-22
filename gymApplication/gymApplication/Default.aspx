@@ -4,36 +4,30 @@
 </asp:Content>
 
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container-fliud" style="overflow-x: hidden;">
+    <div class="container-fuild" style="overflow-x: hidden;">
         <div class="row justify-content-md-center">
             <div class="col-12 " style="height: 350px">
                 <img src="pictures/landinghome.jpg" class="img-fluid" alt="Responsive image" style="height:550px; width:3000px;">
             </div>
         </div>
-        <div class="row justify-content-md-center" style="position:relative;">
+        <div class="row justify-content-md-center" style="position:relative; ">
             <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card" style="border-color: #C4DDE0 ; border-width: 5px; height:400px; width:450px;">
                     <div class="card-body">
                         <h5 class="card-title display-4">..Begin</h5>
-                        <p class="card-text">Your fitness journey with GymHub will change the way you workout forever,no longer will you lose track of any of your progress or the goals you have set for yourself</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <p class="card-text">Your fitness journey with GymHub will change the way you workout forever,no longer will you lose track of any of your progress or the goals you have set for yourself.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card" style="border-color: #C4DDE0 ; border-width:5px; height:400px; width:450px;">
                     <div class="card-body">
-                        <h5 class="card-title display-4">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title display-4">..Continue</h5>
+                        <p class="card-text">Tracking Your workout is simple and easy with our user friendly interface.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card" style="border-color: #C4DDE0 ; border-width: 5px; height:400px; width:450px;">
                     <div class="card-body">
-                        <h5 class="card-title display-4">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 class="card-title display-4">...Complete</h5>
+                        <p class="card-text">At the end of your week, measure you results and leave the gym happy.</p>
                     </div>
                 </div>
             </div>
