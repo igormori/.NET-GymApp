@@ -15,18 +15,23 @@
                     <div class="card-body">
                         <h5 class="card-title display-4">Create</h5>
                         <p class="card-text">Your fitness journey with GymHub and change the way you workout forever.</p>
+                        <div style="height: 5px;"></div>
+                        <a href="Signup.aspx" class="btn btn-primary">Sign Up</a>
                     </div>
                 </div>
                 <div class="card" style="border-color: #C4DDE0; border-width: 5px; height: 400px;">
                     <div class="card-body">
                         <h5 class="card-title display-4">Continue</h5>
                         <p class="card-text ">Tracking your workout with our simple and easy user friendly interface while staying focused on your routine.</p>
+                        <a href="login.aspx" class="btn btn-primary">Log In</a>
+
                     </div>
                 </div>
                 <div class="card" style="border-color: #C4DDE0; border-width: 5px; height: 400px;">
                     <div class="card-body">
                         <h5 class="card-title display-4">Complete</h5>
                         <p class="card-text">Your week, measure you results and maybe even treat yourself?</p>
+                        <a href="Home.aspx" class="btn btn-primary">Home</a>
                     </div>
                 </div>
             </div>
@@ -55,6 +60,13 @@
                     providing them with a list of workouts. At the end of each  week users can
                     view thier weekly and montly progress. Users can chooes from a wide varitey of pre configured workouts to get started right away.
                 </p>
+                <div class="card" style="border-color: #C4DDE0; border-width: 5px; height: 400px;">
+                    <div class="card-body">
+                        <h5 class="card-title display-4">Questions?</h5>
+                        <p class="card-text  display-4">Feel free to connect with us at anytime</p>
+                        <a href="Contact.aspx" style="width:100px;" class="btn btn-primary">Contact</a>
+                    </div>
+                </div>
                 <div style="height: 20px;"></div>
             </div>
         </div>
