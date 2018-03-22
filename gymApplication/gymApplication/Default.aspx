@@ -14,19 +14,19 @@
             <div class="card-deck">
                 <div class="card" style="border-color: #C4DDE0; border-width: 5px; height: 400px;">
                     <div class="card-body">
-                        <h5 class="card-title display-2">Create</h5>
-                        <p class="card-text">Your fitness journey with GymHub and change the way you workout forever, no longer will you lose track of any of your progress or the goals you have set for yourself.</p>
+                        <h5 class="card-title display-4">Create</h5>
+                        <p class="card-text">Your fitness journey with GymHub and change the way you workout forever.</p>
                     </div>
                 </div>
                 <div class="card" style="border-color: #C4DDE0; border-width: 5px; height: 400px;">
                     <div class="card-body">
-                        <h5 class="card-title display-2">Continue</h5>
+                        <h5 class="card-title display-4">Continue</h5>
                         <p class="card-text ">Tracking your workout with our simple and easy user friendly interface while staying focused on your routine.</p>
                     </div>
                 </div>
                 <div class="card" style="border-color: #C4DDE0; border-width: 5px; height: 400px;">
                     <div class="card-body">
-                        <h5 class="card-title display-2">Complete</h5>
+                        <h5 class="card-title display-4">Complete</h5>
                         <p class="card-text">Your week, measure you results and maybe even treat yourself?</p>
                     </div>
                 </div>
@@ -34,17 +34,14 @@
         </div>
         <div style="height: 30px;"></div>
         <div class="row">
-            <div class="col-sm-3 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="..." alt="First slide">
+                            <img class="d-block w-100 img-fluid" src="pictures/landing1.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
+                            <img class="d-block w-100 img-fluid" src="pictures/landing2.png" alt="Second slide">
                         </div>
                     </div>
                 </div>
