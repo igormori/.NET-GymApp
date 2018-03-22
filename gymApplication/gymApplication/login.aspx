@@ -4,8 +4,10 @@
 
     <!---------------This div is where the validation will be displayed--------------------------->
     <div id="MessageArea" runat="server" class="d-flex justify-content-center container-fluid">
+         <asp:RequiredFieldValidator Display="Dynamic" CssClass="alert alert-warning bg-warning " ID="RequiredFieldValidator2" runat="server" ControlToValidate="Password" ErrorMessage="The Passoword cannot be blank" ></asp:RequiredFieldValidator>
         <asp:RequiredFieldValidator Display="Dynamic" CssClass="alert alert-warning bg-warning " ID="RequiredFieldValidator1" runat="server" ControlToValidate="Email" ErrorMessage="The email address cannot be blank"></asp:RequiredFieldValidator>
     </div>
+   
 
     <div class="container ">
 

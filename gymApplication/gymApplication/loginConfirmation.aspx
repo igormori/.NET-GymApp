@@ -5,7 +5,7 @@
 
 
 
-    <asp:Label ID="Message" runat="server"></asp:Label>
+    <asp:Label CssClass="align-content-center" ID="Message" runat="server"></asp:Label>
 
      
 </asp:Content>
