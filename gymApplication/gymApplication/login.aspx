@@ -9,7 +9,7 @@
     </div>
    
 
-    <div class="container ">
+    <div class="container">
 
         <div class="row mt-5"> 
             <div class="col-sm-12 col-md-6 col-lg-8">
@@ -45,8 +45,14 @@
                         <asp:Button ID="Button1" runat="server" Text="Login" CssClass="btn btn-primary mr-auto" OnClick="Button1_Click" />
                     </div>
                 </div>
+                <div class="row mt-lg-5 mt-md-5">
+                <b>Login Instuctions</b>
+                    Key in your GymApp is email(example:igormori@gmail.com)and passowrd. The same credential you need to access everytime you log in the website
+
+                 </div>
 
             </div>
+            
         </div>
     </div>
 
