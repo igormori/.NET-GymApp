@@ -4,16 +4,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
+    <div class="container-fuild" style="overflow-x: hidden;">
+        <div style="height: 30px;"></div>
         <div class="row">
-            <div class="col-md-6">
-                <div style="height:35px;"></div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
                 <!--the card is going here-->
                 <div class="card-group">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card">
+                        <!--img here-->
                         <div class="card-body">
-                            <h5 class="card-title display-4">Your Name</h5>
+                            <h5 class="card-title display-4">Igor</h5>
                             <p class="card-text">
                                 This is your personal homepage please feel free to use the graphs and calendar provided to track your
                                 progress!
@@ -30,29 +30,29 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
-                <!-- place holders for the welcome, flex box and graph go here-->
-                <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6">
+                <!-- place holders for the welcome, days of week and graph go here-->
+        <div class="row justify-content-center">
                     <!--welcome-->
-                    <div class="col">
-                        <h1 class=" display-2">Workouts</h1>
+                    <div class="col-sm-12 col-md-12">
+                        <h1 class="display-4 text-center">Workouts</h1>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <!--flex-->
-                    <div class="col">
-                        <div class="d-flex align-content-around flex-wrap">
-                            <div class="order-1 p-2 border">
-                                Monday
-                            </div>
-                            <div class="order-2 p-2 border">Tuesday</div>
-                            <div class="order-3 p-2 border">Wednesday</div>
-                            <div class="order-4 p-2 border">Thursday</div>
-                            <div class="order-5 p-2 border">Friday</div>
-                            <div class="order-6 p-2 border">Saturday</div>
-                            <div class="order-7 p-2 border">Sunday</div>
-                        </div>
+                <div class="row justify-content-md-center">
+                    <!--days-->
+
+                    <div class="col-md-12">
+                        <p class="text-center">
+                            Sunday
+                   Monday
+                    Tuesday
+                    Wedensday
+                   Thursday
+                    Friday
+                    Saturday
+                        </p>
                     </div>
+
                 </div>
                 <div class="row justify-content-center">
                     <!--graph-->
@@ -104,5 +104,4 @@
             </div>
         </div>
     </div>
-
 </asp:Content>
