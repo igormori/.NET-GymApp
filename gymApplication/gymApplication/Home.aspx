@@ -45,7 +45,7 @@
                 <%-- timeline area --%>
                 <div class="row justify-content-md-center mt-2">
                 <div class="form-group col-lg-8 col-md-8">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="What's up for today?"></textarea>
+    <textarea class="form-control" id="txtArea" rows="4" placeholder="What's up for today?"></textarea>
     <button type="submit" class="btn btn-success float-right mt-3">Update</button>
                 </div>    
                 </div>

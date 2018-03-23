@@ -31,22 +31,22 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.TextBox Username;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// requiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredFieldValidator1;
         
         /// <summary>
-        /// RegularExpressionValidator3 control.
+        /// usernameValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator usernameValidator;
         
         /// <summary>
         /// Email control.
@@ -58,22 +58,22 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.TextBox Email;
         
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// regularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regularExpressionValidator1;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// requiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredFieldValidator2;
         
         /// <summary>
         /// EmailConfirm control.
@@ -85,13 +85,13 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.TextBox EmailConfirm;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// requiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredFieldValidator3;
         
         /// <summary>
         /// CompareValidator1 control.
@@ -101,6 +101,60 @@ namespace gymApplication {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        
+        /// <summary>
+        /// signupPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox signupPassword;
+        
+        /// <summary>
+        /// SignupPswValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator SignupPswValidator;
+        
+        /// <summary>
+        /// signupPswRegex control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator signupPswRegex;
+        
+        /// <summary>
+        /// SignupconfirmPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox SignupconfirmPassword;
+        
+        /// <summary>
+        /// signupConfPswValid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator signupConfPswValid;
+        
+        /// <summary>
+        /// PswCompareValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator PswCompareValidator;
         
         /// <summary>
         /// Password control.

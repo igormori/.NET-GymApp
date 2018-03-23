@@ -57,8 +57,8 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <!-- <input type="email" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="Enter Username">-->
                         <asp:TextBox ID="Username" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Enter Username"></asp:TextBox>
-                        <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator1" runat="server" ControlToValidate="Username" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="Username" ErrorMessage="USer Name Must start with a letter" Style="color: #FF0000" ValidationExpression="^[A-Za-z][\w]{0,}" Display="Dynamic"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator Display="Dynamic" ID="requiredFieldValidator1" runat="server" ControlToValidate="Username" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="usernameValidator" runat="server" ControlToValidate="Username" ErrorMessage="USer Name Must start with a letter" Style="color: #FF0000" ValidationExpression="^[A-Za-z][\w]{0,}" Display="Dynamic"></asp:RegularExpressionValidator>
                     </div>
                 </div>
 
@@ -66,38 +66,38 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <!-- <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">-->
                         <asp:TextBox ID="Email" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"></asp:TextBox>
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Email" ErrorMessage="Enter a valid email address" Style="color: #FF0000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="regularExpressionValidator1" runat="server" ControlToValidate="Email" ErrorMessage="Enter a valid email address" Style="color: #FF0000" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"></asp:RegularExpressionValidator>
 
-                        <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator2" runat="server" ControlToValidate="Email" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator Display="Dynamic" ID="requiredFieldValidator2" runat="server" ControlToValidate="Email" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-lg-12 col-md-12 col-sm-12 ">
                         <!--<input type="email" class="form-control" ID="EmailConfirm" aria-describedby="emailHelp" placeholder="Confirm email">-->
                         <asp:TextBox ID="EmailConfirm" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Confirm email"></asp:TextBox>
-                        <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator3" runat="server" ControlToValidate="EmailConfirm" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator Display="Dynamic" ID="requiredFieldValidator3" runat="server" ControlToValidate="EmailConfirm" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator1" ControlToValidate="EmailConfirm" runat="server" ErrorMessage="Email Address not matched" Style="color: #FF0000" ControlToCompare="Email" Display="Dynamic"></asp:CompareValidator>
                     </div>
                 </div>
-<<<<<<< HEAD
+
             </div>
             <div class="form-group row">
                 <label for="exampleInputPassword1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Password</label>
                 <div class="col-lg-6 col-md-8 col-sm-10">
                     <!--<input type="password" class="form-control" id="Password" placeholder="Password">-->
-                    <asp:TextBox ID="Password" type="password" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
-                    <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator4" runat="server" ControlToValidate="Password" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Password" ErrorMessage="Pass has to start with a letter, a digit, and '!' or '*' and 8 to 16 char long" Style="color: #FF0000" ValidationExpression="^[A-Za-z](?=.*[!*])(?=.*[\d]).{7,16}" Display="Dynamic"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="signupPassword" type="password" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+                    <asp:RequiredFieldValidator Display="Dynamic" ID="SignupPswValidator" runat="server" ControlToValidate="Password" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="signupPswRegex" runat="server" ControlToValidate="Password" ErrorMessage="Pass has to start with a letter, a digit, and '!' or '*' and 8 to 16 char long" Style="color: #FF0000" ValidationExpression="^[A-Za-z](?=.*[!*])(?=.*[\d]).{7,16}" Display="Dynamic"></asp:RegularExpressionValidator>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="exampleInputPassword1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Password</label>
                 <div class="col-lg-6 col-md-8 col-sm-10">
                     <!-- <input type="password" class="form-control" id="confirmPassword" placeholder="Confrim Password">-->
-                    <asp:TextBox ID="confirmPassword" type="password" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
-                    <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator5" runat="server" ControlToValidate="confirmPassword" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
-                    <asp:CompareValidator ID="CompareValidator2" ControlToValidate="confirmPassword" runat="server" ErrorMessage="Password not matched" Style="color: #FF0000" ControlToCompare="Password" Display="Dynamic"></asp:CompareValidator>
-=======
+                    <asp:TextBox ID="SignupconfirmPassword" type="password" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
+                    <asp:RequiredFieldValidator Display="Dynamic" ID="signupConfPswValid" runat="server" ControlToValidate="SignupconfirmPassword" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
+                    <asp:CompareValidator ID="PswCompareValidator" ControlToValidate="SignupconfirmPassword" runat="server" ErrorMessage="Password not matched" Style="color: #FF0000" ControlToCompare="Password" Display="Dynamic"></asp:CompareValidator>
+
                 <div class="form-group row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <!--<input type="password" class="form-control" id="Password" placeholder="Password">-->
@@ -114,7 +114,7 @@
                         <asp:TextBox ID="confirmPassword" TextMode="Password" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
                         <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator5" runat="server" ControlToValidate="confirmPassword" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator2" ControlToValidate="confirmPassword" runat="server" ErrorMessage="Password not matched" Style="color: #FF0000" ControlToCompare="Password" Display="Dynamic"></asp:CompareValidator>
->>>>>>> 24e72347235c346319b89969298cf44cb7a62456
+
 
                     </div>
                 </div>
@@ -130,5 +130,5 @@
             </div>
         </div>
     </div>
-
+        </div>
 </asp:Content>
