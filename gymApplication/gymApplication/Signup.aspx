@@ -4,7 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
-
+        
+</div>
         <div class="row mt-5">
             <div class="col-sm-12 col-md-6 col-lg-8">
                 <div class="row ">
@@ -47,36 +48,46 @@
                 <div class="form-group row">
                     <label for="exampleInputEmail1 " class="col-sm-2 col-md-4 col-lg-4 col-form-label">@Username</label>
                     <div class="col-lg-6 col-md-8 col-sm-10">
-                        <input type="email" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="Enter Username">
+                       <!-- <input type="email" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="Enter Username">-->
+                        <asp:TextBox ID="Username" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Enter Username"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic"  ID="RequiredFieldValidator1" runat="server" ControlToValidate="Username" ErrorMessage="Field cannot be blank" style="color: #FF0000"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="exampleInputEmail1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Email address</label>
                     <div class="col-lg-6 col-md-8 col-sm-10">
-                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">
+                       <!-- <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email">-->
+                        <asp:TextBox ID="Email" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic"  ID="RequiredFieldValidator2" runat="server" ControlToValidate="Email" ErrorMessage="Field cannot be blank" style="color: #FF0000"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="exampleInputEmail1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Email address</label>
                     <div class="col-lg-6 col-md-8 col-sm-10">
-                        <input type="email" class="form-control" id="EmailConfrim" aria-describedby="emailHelp" placeholder="Confirm email">
+                        <!--<input type="email" class="form-control" ID="EmailConfirm" aria-describedby="emailHelp" placeholder="Confirm email">-->
+                        <asp:TextBox ID="EmailConfirm" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Confirm email"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic"  ID="RequiredFieldValidator3" runat="server" ControlToValidate="EmailConfirm" ErrorMessage="Field cannot be blank" style="color: #FF0000"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="exampleInputPassword1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Password</label>
                     <div class="col-lg-6 col-md-8 col-sm-10">
-                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                        <!--<input type="password" class="form-control" id="Password" placeholder="Password">-->
+                        <asp:TextBox ID="Password" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic"  ID="RequiredFieldValidator4" runat="server" ControlToValidate="Password" ErrorMessage="Field cannot be blank" style="color: #FF0000"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="exampleInputPassword1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Password</label>
                     <div class="col-lg-6 col-md-8 col-sm-10">
-                        <input type="password" class="form-control" id="confrimPassword" placeholder="Confrim Password">
+                       <!-- <input type="password" class="form-control" id="confirmPassword" placeholder="Confrim Password">-->
+                        <asp:TextBox ID="confirmPassword" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator Display="Dynamic"  ID="RequiredFieldValidator5" runat="server" ControlToValidate="confirmPassword" ErrorMessage="Field cannot be blank" style="color: #FF0000"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Sign Up</button>
             </div>
         </div>
-    </div>
+    
 
 </asp:Content>
