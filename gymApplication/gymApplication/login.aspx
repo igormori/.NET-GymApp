@@ -39,12 +39,12 @@
                 <div class="form-group row ">
                    
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <asp:TextBox ID="Password" TextMode="Password" runat="server"  placeholder="Enter passowrd" OnTextChanged="TextBox1_TextChanged" CssClass=" form-control"></asp:TextBox>
+                        <asp:TextBox ID="Password" runat="server"  placeholder="Enter passowrd" OnTextChanged="TextBox1_TextChanged" CssClass=" form-control"></asp:TextBox>
                     </div>
                 </div>
                 <div class="row mt-lg-12 mt-md-12 ">
                     <div class="col text-center">
-                        <asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-success"  OnClick="Button1_Click" Width="50%"  />
+                        <asp:Button ID="Button1" TextMode="Password" runat="server" Text="Login" class="btn btn-success"  OnClick="Button1_Click" Width="50%"  />
                     </div>
                 </div>
                   <div class="row mt-lg-3 mt-md-3 mb-3 border">
