@@ -24,11 +24,13 @@
             <div class="col-sm-12 col-md-6 col-lg-4  justify-content-center mt-sm-5">
                 <%--<div class="col-sm-3 col-md-6" style="background-color: #E3E5E5;">--%>
 
-                <div class="form-group row ">
-                    <div class="col-lg-12 col-md-12 col-sm-12 pt-0 text-center" >
-                        <asp:Label class="lb-md" ID="Label1" runat="server" Text="login in"></asp:Label>
+                
+                    <div class="row mb-1 text-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12" >
+                        <h1><asp:Label ID="Label1" runat="server" Text="login in"></asp:Label></h1>
                     </div>
-                    
+                    </div>
+                  <div class="row mt-5">  
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <asp:TextBox ID="Email" runat="server"  placeholder="Enter Email" OnTextChanged="TextBox1_TextChanged" CssClass="form-control"></asp:TextBox>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -45,7 +47,7 @@
                         <asp:Button ID="Button1" TextMode="Password" runat="server" Text="Login" class="btn btn-success"  OnClick="Button1_Click" Width="50%"  />
                     </div>
                 </div>
-                  <div class="row mt-lg-3 mt-md-3 border">
+                  <div class="row mt-lg-3 mt-md-3 mb-3 border">
                     <div class="p-3">
                 <b>Login Instuctions</b>
                     Key in your GymApp is email (example:igormori@gmail.com) and passowrd. The same credential you need to access access the website.
