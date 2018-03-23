@@ -42,3 +42,8 @@
     height:50px;
     border-radius: 50%;
 }
+
+.input-group {
+  padding-bottom: 20px;
+  padding-right:50px;
+}
