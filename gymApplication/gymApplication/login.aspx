@@ -25,9 +25,9 @@
                 <%--<div class="col-sm-3 col-md-6" style="background-color: #E3E5E5;">--%>
 
                 
-                    <div class="row mb-1 text-center">
+                    <div class="row mb-1">
                     <div class="col-lg-12 col-md-12 col-sm-12" >
-                        <h1><asp:Label ID="Label1" runat="server" Text="login in"></asp:Label></h1>
+                        <b><h1><asp:Label ID="Label1" runat="server" Text="Login in"></asp:Label></h1></b>
                     </div>
                     </div>
                   <div class="row mt-5">  
