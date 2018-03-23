@@ -11,6 +11,7 @@
 
     <div class="container">
 
+
         <div class="row mt-5"> 
             <div class="col-sm-12 col-md-6 col-lg-8">
                 <div class="row ">
@@ -20,32 +21,33 @@
                 </div>
 
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 justify-content-center mt-sm-5">
+            <div class="col-sm-12 col-md-6 col-lg-4  justify-content-center mt-sm-5">
                 <%--<div class="col-sm-3 col-md-6" style="background-color: #E3E5E5;">--%>
 
-                <div class="form-group row ">
-
-                    <label for="exampleInputEmail1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">
-                        Email address
-                    </label>
-
-                    <div class="col-lg-6 col-md-8 col-sm-10">
-                        <asp:TextBox ID="Email" runat="server" OnTextChanged="TextBox1_TextChanged" CssClass="form-control"></asp:TextBox>
+                
+                    <div class="row mb-1">
+                    <div class="col-lg-12 col-md-12 col-sm-12" >
+                        <b><h1><asp:Label ID="Label1" runat="server" Text="Login in"></asp:Label></h1></b>
+                    </div>
+                    </div>
+                  <div class="row mt-5">  
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <asp:TextBox ID="Email" runat="server"  placeholder="Enter Email" OnTextChanged="TextBox1_TextChanged" CssClass="form-control"></asp:TextBox>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                 </div>
                 <div class="form-group row ">
-                    <label for="exampleInputPassword1" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Password</label>
-                    <div class="col-lg-6 col-md-8 col-sm-10">
-                        <asp:TextBox ID="Password" runat="server" OnTextChanged="TextBox1_TextChanged" CssClass=" form-control"></asp:TextBox>
+                   
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <asp:TextBox ID="Password" runat="server"  placeholder="Enter passowrd" OnTextChanged="TextBox1_TextChanged" CssClass=" form-control"></asp:TextBox>
                     </div>
                 </div>
-                <div class="row mt-lg-5 mt-md-5 ">
+                <div class="row mt-lg-12 mt-md-12 ">
                     <div class="col text-center">
-                        <asp:Button ID="Button1" runat="server" Text="Login" CssClass="btn btn-primary mr-auto" OnClick="Button1_Click" />
+                        <asp:Button ID="Button1" TextMode="Password" runat="server" Text="Login" class="btn btn-success"  OnClick="Button1_Click" Width="50%"  />
                     </div>
                 </div>
-                  <div class="row mt-lg-5 mt-md-5 border">
+                  <div class="row mt-lg-3 mt-md-3 mb-3 border">
                     <div class="p-3">
                 <b>Login Instuctions</b>
                     Key in your GymApp is email (example:igormori@gmail.com) and passowrd. The same credential you need to access access the website.
