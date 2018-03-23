@@ -16,7 +16,8 @@ namespace gymApplication
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if(IsPostBack&& Page.IsValid)
+            Session["Username"] = Username.Text;
+            if (IsPostBack&& Page.IsValid)
       
             {
                 Response.Redirect("SignupConfirmation.aspx?response=Success");
