@@ -27,12 +27,12 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="pictures/profile.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Igor</h5>
                     <p class="card-text">
-                        Hello! My name is Farhad and I am a student at George Brown College currently 
-                        studying computer programming.please do contact us if you ever need anything!
+                        Hello! My name is igor Mori and I am a student at George Brown College currently 
+                        studying computer programming.I also love music and cook those are my favorite hobbies.please do contact us if you ever need anything!
                     </p>
                 </div>
             </div>

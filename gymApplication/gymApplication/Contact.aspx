@@ -93,7 +93,8 @@
 </div>
         <div class="row justify-content-center">
             <div class="col-sm-1"> 
-                    <button type="submit" class="btn btn-primary">Submit</button>   
+                <asp:Button ID="Button1" runat="server" Text="Submit" class="btn btn-primary" OnClick="Button1_Click" />
+                
             </div>
         </div>
     

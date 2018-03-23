@@ -14,6 +14,13 @@ namespace gymApplication
 
         }
 
-
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if(RequiredFieldValidator2.IsValid && RequiredFieldValidator3.IsValid && RequiredFieldValidator4.IsValid)
+            {
+                Session["farhad"] = "thankyou";
+                Response.Redirect("FeedbackConf.aspx?response=ThankYou");
+            }
+        }
     }
 }
