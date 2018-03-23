@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="pictures/creig.jpeg" alt="Card image cap">
+                <img class="card-img-top" src="pictures/creig.jpeg" alt="image of creig">
                 <div class="card-body">
                     <h5 class="card-title">Crieg</h5>
                     <p class="card-text">
