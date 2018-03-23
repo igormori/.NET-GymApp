@@ -7,17 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace gymApplication
 {
-    public partial class WebForm6 : System.Web.UI.Page
+    public partial class WebForm8 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Message.Text = Request.QueryString["response"].ToString();
-
-            if(Message.Text == "YouAreLoggedIn")
+           
+            if(Request.QueryString["response"].ToString() == "ThankYou")
             {
-                Message.Text = "<h1> You are logged in </h1>";
+                Label1.Text = "<h1>Thank you for the completing the survey.</h1>";
             }
-
+            
         }
     }
 }

@@ -76,6 +76,7 @@
     <Content Include="Contact.aspx" />
     <Content Include="loginConfirmation.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="FeedbackConf.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
@@ -214,6 +215,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackConf.aspx.cs">
+      <DependentUpon>FeedbackConf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackConf.aspx.designer.cs">
+      <DependentUpon>FeedbackConf.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
