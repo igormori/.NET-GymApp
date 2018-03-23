@@ -3,9 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-
-
     <asp:Label CssClass="align-content-center" ID="Message" runat="server"></asp:Label>
-
      
 </asp:Content>
