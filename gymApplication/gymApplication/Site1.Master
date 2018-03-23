@@ -69,39 +69,25 @@
         <div style="background-color: whitesmoke;">
             <div class="container">
                 <!--Grid row-->
-                <div class="row d-flex ">
+                <div class="row py-4 d-flex align-items-center">
                     <!--Grid column-->
-                    <div class="col-12  mb-4 mb-md-0">
-                        <div class="row">
-                            <div class="col float-left">
-                                       <b>Igor Mori : 101045762</b>
+                    <div class="col-12 col-md-5 text-left mb-4 mb-md-0">
+                        <h6><a href="Contact.aspx"><strong>Contact Us</strong></a> <strong>|</strong> <a href="AboutUs.aspx"><strong>About Us</strong></h6></a>
+                      <b ID="Copyright" runat="server" class="navbar-text">&copy; Copyright 2018</b>
                         </br>
-                        <b>Sherwayne Walrond 100612847</b>
-                       
-                            </div>
-                          
-                            <div class="col float-right">
-                        <b>Dindyal Mursingh : 101045762</b>
+                        <b>Igor Mori | 101045762</b>
                         </br>
-                        <b>Farhad Hossain : 101056010</b>
-                            </div>
-                                     <div class="col float-right">
-                        <b>Fortune Creig Phiri : 101087294</b>
-                            </div>
-                        </div>
-                        
-                      
-                      
-                        
-                        
-                            <div class="row mt-2">
-                                <div class="col">
-                                     <a href="Contact.aspx"><strong>Contact Us</strong></a> &nbsp; <a href="AboutUs.aspx"><strong>About Us</strong></a>
-                                </div>
-                                <div class="col">
-                                    <strong ID="Copyright" runat="server" class="navbar-text">&copy; Copyright 2018</strong>
-                                </div>
-                                <div class="col justify-right">
+                        <b>Sherwayne Walrond | 100612847</b>
+                        </br>
+                        <b>Fortune Creig Phiri | 101087294</b>
+                        </br>
+                        <b>Dindyal Mursingh | 101045762</b>
+                        </br>
+                        <b>Farhad Hossain | 101056010</b>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-12 col-md-7 text-center text-md-right">
                         <!--Facebook-->
                         <a class="fb-ic ml-0"><i class="fa fa-facebook white-text mr-lg-4"></i></a>
                         <!--Twitter-->
@@ -113,22 +99,6 @@
                         <!--Instagram-->
                         <a class="ins-ic"><i class="fa fa-instagram white-text mr-lg-4"></i></a>
                     </div>
-                    </div> 
-                        
-                       <%-- </br>
-                        <b>Igor Mori | 101045762</b>
-                        </br>
-                        <b>Sherwayne Walrond | 100612847</b>
-                        </br>
-                        <b>Fortune Creig Phiri | 101087294</b>
-                        </br>
-                        <b>Dindyal Mursingh | 101045762</b>
-                        </br>
-                        <b>Farhad Hossain | 101056010</b>--%>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                
                     <!--Grid column-->
                 </div>
                 <!--Grid row-->

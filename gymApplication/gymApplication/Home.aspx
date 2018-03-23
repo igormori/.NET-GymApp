@@ -6,17 +6,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-fuild" style="overflow-x: hidden;">
         <div style="height: 30px;"></div>
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div class="row justify-content-center">
-            <div class="col-xs-12 col-sm-8 col-md-4 col-lg-3 ">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
                 <!--the card is going here-->
                 <div class="card-group">
                     <div class="card">
                         <!--img here-->
-                        <asp:Image ID="profileImage" runat="server" CssClass="img-fluid" src="pictures/profile.jpg" />
-                       
-                            <div class="card-body">
+                        <div class="card-body">
                             <h5 class="card-title display-4">Igor</h5>
                             <p class="card-text">
                                 This is your personal homepage please feel free to use the graphs and calendar provided to track your
@@ -34,45 +30,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-8 col-lg-7 ml-lg-5">
+            <div class="col-sm-12 col-md-6">
                 <!-- place holders for the welcome, days of week and graph go here-->
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 pt-1">
-                        <h1 class="h1 text-center">Timeline</h1>
-
-                        </div>
-                </div>
-                <%-- timeline area --%>
-                <div class="row justify-content-md-center mt-2">
-                <div class="form-group col-lg-8 col-md-8">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="What's up for today?"></textarea>
-    <button type="submit" class="btn btn-success float-right mt-3">Update</button>
-                </div>    
-                </div>
         <div class="row justify-content-center">
                     <!--welcome-->
-                    <div class="col-sm-12 col-md-12 pt-3">
-                        <h1 class="h1 text-center">Workouts</h1>
+                    <div class="col-sm-12 col-md-12">
+                        <h1 class="display-4 text-center">Workouts</h1>
                     </div>
                 </div>
-                <div class="row justify-content-md-center mt-3">
+                <div class="row justify-content-md-center">
                     <!--days-->
 
-
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="row">
-                            <div class="col-lg col-md-2 col-sm-2">MONDAY</div>
-                            <div class="col-lg col-md-2 col-sm-2">TUESDAY</div>
-                            <div class="col-lg col-md-2 col-sm-2">WEDNESDAY</div>
-                            <div class="col-lg col-md-2 col-sm-2">THURSDAY</div>
-                            <div class="col-lg col-md col-sm">FRIDAY</div>
-                            <div class="col-lg col-md col-sm">SATURDAY</div>
-                            <div class="col-lg col-md col-sm">SUNDAY</div>
-                        </div>
-                    </div>
-
-                    <%--<div class="row col-md-12 ">
-                        <p class="text-center text-primary">
+                    <div class="col-md-12">
+                        <p class="text-center">
                             Sunday
                    Monday
                     Tuesday
@@ -81,10 +51,10 @@
                     Friday
                     Saturday
                         </p>
-                    </div>--%>
+                    </div>
 
                 </div>
-                <div class="row justify-content-center mt-3">
+                <div class="row justify-content-center">
                     <!--graph-->
                     <div class="col">
                         <canvas id="myChart" width="400" height="200"></canvas>
@@ -132,8 +102,6 @@
                     </div>
                 </div>
             </div>
-           </div>
         </div>
-            </div>
     </div>
 </asp:Content>
