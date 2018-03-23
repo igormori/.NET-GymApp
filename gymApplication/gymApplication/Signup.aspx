@@ -86,7 +86,8 @@
                         <asp:RequiredFieldValidator Display="Dynamic"  ID="RequiredFieldValidator5" runat="server" ControlToValidate="confirmPassword" ErrorMessage="Field cannot be blank" style="color: #FF0000"></asp:RequiredFieldValidator>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign Up</button>
+                <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Sign Up" OnClick="Button1_Click" />
+                
             </div>
         </div>
     
