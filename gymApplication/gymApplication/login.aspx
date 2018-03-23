@@ -45,14 +45,18 @@
                         <asp:Button ID="Button1" runat="server" Text="Login" CssClass="btn btn-primary mr-auto" OnClick="Button1_Click" />
                     </div>
                 </div>
-                <div class="row mt-lg-5 mt-md-5">
+                  <div class="row mt-lg-5 mt-md-5 border">
+                    <div class="p-3">
                 <b>Login Instuctions</b>
-                    Key in your GymApp is email(example:igormori@gmail.com)and passowrd. The same credential you need to access everytime you log in the website
-
+                    Key in your GymApp is email (example:igormori@gmail.com) and passowrd. The same credential you need to access access the website.
+                </br><b>Forgot your password?</b>
+                        Please send us an e-mail to reset your password <a href="Contact.aspx">Contact Us</a>
+                    </div>
                  </div>
+            
 
             </div>
-            
+         
         </div>
     </div>
 
