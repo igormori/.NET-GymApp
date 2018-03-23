@@ -27,7 +27,7 @@
     <!---------------------------- NavBar ---------------------------------------------->
 
  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightslategrey;">
-  <a id="Brand" runat="server" class="navbar-brand" href="~">
+  <a id="Brand" runat="server" class="navbar-brand" href="Home.aspx">
             <img src="pictures/logo.png" width="80px" length="80px">
         </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
