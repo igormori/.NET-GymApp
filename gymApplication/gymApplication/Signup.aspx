@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
     <div class="container">
         
 </div>
@@ -17,10 +18,10 @@
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
-                                <div class="carousel-item ">
+                                <div class="carousel-item active ">
                                     <img class="d-block w-100" src="pictures/sprint.jpeg" alt="First slide">
                                 </div>
-                                <div class="carousel-item active">
+                                <div class="carousel-item ">
                                     <img class="d-block w-100" src="pictures/girl_boxer.jpeg" alt="Second slide">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h4>Here is to the </h4>
@@ -29,7 +30,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="pictures.sprint.jpeg" alt="Third slide">
+                                    <img class="d-block w-100" src="pictures/track.jpg" alt="Third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

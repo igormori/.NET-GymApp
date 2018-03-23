@@ -12,6 +12,10 @@ namespace gymApplication
         protected void Page_Load(object sender, EventArgs e)
         {
             Message.Text = Request.QueryString["response"].ToString();
+            if(Message.Text == "YouAreLoggedIn")
+            {
+                Message.Text = "<h1> You are logged in </h1>";
+            }
 
         }
     }

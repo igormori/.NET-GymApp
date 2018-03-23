@@ -13,5 +13,10 @@ namespace gymApplication
         {
             
         }
+
+        public void SetCopyrightMessage()
+        {
+            Copyright.InnerHtml = "&copy; Copyright " + DateTime.Now.Year;
+        }
     }
 }

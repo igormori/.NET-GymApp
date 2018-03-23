@@ -26,9 +26,8 @@
 
     <!---------------------------- NavBar ---------------------------------------------->
 
-
-    <nav class="navbar navbar-expand-lg " style="background-color: lightslategrey; height: 50px;">
-        <a id="Brand" runat="server" class="navbar-brand" href="~">
+     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: lightslategrey;">
+        <a id="Brand" runat="server" class="navbar-brand" href="Default.aspx">
             <img src="pictures/logo.png" width="80px" length="80px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,18 +36,30 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
+
+
                     <a class="nav-link" href="Home.aspx" style="color: white; margin-left: 50px;">Main<span class="sr-only"></span></a>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Profile.aspx" style="color: white;">Profile</a>
+                </li>
+            
+            </ul>
+              <ul class="navbar-nav ">
+               <li class="nav-item">
+                    <a class="nav-link " href="login.aspx" style="color: white;">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Profile.aspx" style="color: white; margin-left: 20px;">Profile</a>
+                     <a class="nav-link " href="Signup.aspx" style="color: white;">Signup<a/>
                 </li>
-            </ul>
-            <a class="nav-link text-right" href="login.aspx" style="color: white;">Login</a>
-            <a class="nav-link text-right" href="Signup.aspx" style="color: white;">Signup</a>
+                  </ul>
+
+
+
         </div>
-    </nav>
 
-
+</nav>
     <!--------- This is where all content goes-------->
 
 
@@ -66,8 +77,18 @@
                 <div class="row py-4 d-flex align-items-center">
                     <!--Grid column-->
                     <div class="col-12 col-md-5 text-left mb-4 mb-md-0">
-                        <h6><a href="Contact.aspx"><strong>Contact Us</strong> <strong>|</strong> <a href="AboutUs.aspx"><strong>About Us</strong></h6>
-                          © 2017 Copyright:<strong> GymApp</strong>
+                        <h6><a href="Contact.aspx"><strong>Contact Us</strong></a> <strong>|</strong> <a href="AboutUs.aspx"><strong>About Us</strong></h6></a>
+                      <b ID="Copyright" runat="server" class="navbar-text">&copy; Copyright 2018</b>
+                        </br>
+                        <b>Igor Mori | 101045762</b>
+                        </br>
+                        <b>Sherwayne Walrond | 100612847</b>
+                        </br>
+                        <b>Fortune Creig Phiri | 101087294</b>
+                        </br>
+                        <b>Dindyal Mursingh | 101045762</b>
+                        </br>
+                        <b>Igor Mori | 101045762</b>
                     </div>
                     <!--Grid column-->
                     <!--Grid column-->
@@ -92,9 +113,10 @@
 
     <! ---------- JavaScript Section------------ >
 
-    <script src="Scripts/bootstrap.bundle.min.js"></script>
-    <script src="Scripts/jquery-3.0.0.min.js"></script>
-    <script src="Scripts/app.js"></script>
+    
+       <script src="Scripts/jquery-3.3.1.min.js"></script>
+       <script src="Scripts/app.js"></script>
+       <script src="Scripts/bootstrap.js"></script>
 
 </body>
 </html>

@@ -11,6 +11,7 @@
         </div>
         <div style="height: 80px;"></div>
         <div class="row justify-content-center">
+            <a href="Contact.aspx">Contact.aspx</a>
             <h1 class="display-3">Contact us</h1>
             <div style="height: 100px;"></div>
         </div>
