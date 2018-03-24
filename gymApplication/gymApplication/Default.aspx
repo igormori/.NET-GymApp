@@ -16,14 +16,14 @@
                         <h5 class="card-title display-4">Create</h5>
                         <p class="card-text">Your fitness journey with GymHub and change the way you workout forever.</p>
                         <div style="height: 5px;"></div>
-                        <a href="Signup.aspx" class="btn btn-primary">Sign Up</a>
+                        <a href="Signup.aspx" class="btn btn-primary w-50 p-3">Sign Up</a>
                     </div>
                 </div>
                 <div class="card" style="border-color: #C4DDE0; border-width: 5px; height: 400px;">
                     <div class="card-body">
                         <h5 class="card-title display-4">Continue</h5>
                         <p class="card-text ">Tracking your workout with our simple and easy user friendly interface while staying focused on your routine.</p>
-                        <a href="login.aspx" class="btn btn-primary">Log In</a>
+                        <a href="login.aspx" class="btn btn-primary w-50 p-3">Log In</a>
 
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="card-body">
                         <h5 class="card-title display-4">Complete</h5>
                         <p class="card-text">Your week, measure you results and maybe even treat yourself?</p>
-                        <a href="Home.aspx" class="btn btn-primary">Home</a>
+                        <a href="Home.aspx" class="btn btn-primary w-50 p-3">Home</a>
                     </div>
                 </div>
             </div>

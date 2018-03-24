@@ -27,7 +27,7 @@
                                     <li class="list-group-item">Your Gym name and Location</li>
                                 </ul>
                                 <div class="card-body">
-                                    <a href="#" class="card-link">Profile</a>
+                                    <a href="profile.aspx" class="card-link">Profile</a>
                                 </div>
                             </div>
                         </div>
