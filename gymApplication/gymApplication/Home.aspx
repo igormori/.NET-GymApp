@@ -37,15 +37,15 @@
                         <div class="row justify-content-center">
                             <!--welcome-->
                             <div class="col-sm-12 col-md-12 col-lg-8 p-2">
-                                <h1 class="display-4 text-center">TimeLine</h1>
-                                <textarea class="form-control" rows="5" placeholder="What's your plan for today ?"></textarea>
+                                <h1 class="display-5 text-center text-primary font-weight-bold">TimeLine</h1>
+                                <textarea class="form-control border-primary text-muted" rows="5" placeholder="What's your plan for today ?"></textarea>
                                 <button type="submit" class="btn btn-success float-right mt-4">Update</button>
                             </div>
                         </div>
-                        <div class="row justify-content-center mt-3">
+                        <div class="row justify-content-center mt-1">
                             <!--welcome-->
                             <div class="col-sm-12 col-md-12">
-                                <h1 class="display-4 text-center">Workouts</h1>
+                                <h1 class="display-5 text-center text-primary">Workouts</h1>
                             </div>
                         </div>
                         <div class="row justify-content-md-center mt-2">
