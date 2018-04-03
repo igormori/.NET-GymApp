@@ -7,9 +7,10 @@
     <div class="container">
     </div>
     <div style="height: 80px;"></div>
-    <div class="nounderline row justify-content-center">
+    <div class="row justify-content-center">
+        
         <h1 class="display-3">Contact us</h1>
-
+        <div style="height: 100px;"></div>
     </div>
     <div class="row justify-content-center">
         <div class="col-sm-3">

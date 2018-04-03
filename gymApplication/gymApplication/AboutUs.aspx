@@ -17,12 +17,11 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
+                <img class="card-img-top" src="pictures/creig.jpeg" alt="image of creig">
                 <div class="card-body">
                     <h5 class="card-title">Crieg</h5>
                     <p class="card-text">
-                        Hello! My name is Farhad and I am a student at George Brown College currently 
-                        studying computer programming. hope you enjoy the features of this app and continue to use it on a daily basis
+                        I am Fortune Creig. I am an ex-business major turned programmer.
                     </p>
                 </div>
             </div>
