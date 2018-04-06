@@ -78,7 +78,7 @@
                 
                 <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
                     <!--<input type="password" class="form-control" id="Password" placeholder="Password">-->
-                    <asp:TextBox ID="Password" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+                    <asp:TextBox ID="Password" type ="password" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator4" runat="server" ControlToValidate="Password" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Password" ErrorMessage="Pass has to start with a letter, a digit, and '!' or '*' and 8 to 16 char long" Style="color: #FF0000" ValidationExpression="^[A-Za-z](?=.*[!*])(?=.*[\d]).{7,16}" Display="Dynamic"></asp:RegularExpressionValidator>
                 </div>
@@ -87,7 +87,7 @@
                 
                 <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
                     <!-- <input type="password" class="form-control" id="confirmPassword" placeholder="Confrim Password">-->
-                    <asp:TextBox ID="confirmPassword" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
+                    <asp:TextBox ID="confirmPassword" type = "password" runat="server" class="form-control" placeholder="Confirm Password"></asp:TextBox>
                     <asp:RequiredFieldValidator Display="Dynamic" ID="RequiredFieldValidator5" runat="server" ControlToValidate="confirmPassword" ErrorMessage="Field cannot be blank" Style="color: #FF0000"></asp:RequiredFieldValidator>
                     <asp:CompareValidator ID="CompareValidator2" ControlToValidate="confirmPassword" runat="server" ErrorMessage="Password not matched" Style="color: #FF0000" ControlToCompare="Password" Display="Dynamic"></asp:CompareValidator>
 
