@@ -11,7 +11,10 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+            name.Text = Session["userName"].ToString();
+            level.Text = Session['level'].ToString();
+            Image1.ImageUrl = "pictures/" + Session["profilePicture"].ToString();
         }
     }
 }

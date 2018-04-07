@@ -12,11 +12,12 @@
 
     <div class="row rounded" style="padding: 50px">
         <div class="col-sm-5 col-md-6" id="profile">
-            <img src="pictures/profile.jpg" class="img-fluid img-thumbnail fa-circle" width="250px" height="250px">
-            <h1>igor Mori</h1>
-            <h3>beginner</h3>
+            <asp:Image ID="Image1" runat="server" src="pictures/profile.jpg" CssClass="img-fluid img-thumbnail fa-circle" width="250px" height="250px" />
+       
+            <h1><asp:Label ID="name" runat="server" Text="Label"></asp:Label></h1>
+            <h2><asp:Label ID="level" runat="server" Text="Label"></asp:Label></h2>
+      
             <i class="fas fa-chart-line"></i>
-            <h3>Gym Week Progress</h3>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
             <div class="box1">Today`s note:</br> It is always seems impossible until it`s done.</div>
