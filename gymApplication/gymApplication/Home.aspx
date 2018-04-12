@@ -53,13 +53,15 @@
 
                             <div class="col-md-12 col-12">
                                 <p class="text-center">
-                                    Sunday
-                   Monday
-                    Tuesday
-                    Wedensday
-                   Thursday
-                    Friday
-                    Saturday
+                                    
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button1" runat="server" Text="Sunday" />
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button2" runat="server" Text="Monday" />
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button3" runat="server" Text="Tuesday" />
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button4" runat="server" Text="Wednesday" />
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button5" runat="server" Text="Thursday" />
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button6" runat="server" Text="Friday" />
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button7" runat="server" Text="Saturday" />
+                   
                                 </p>
                             </div>
 

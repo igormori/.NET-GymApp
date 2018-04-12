@@ -15,6 +15,7 @@ namespace gymApplication
 
             if(Message.Text == "YouAreLoggedIn")
             {
+
                 Message.Text = "<h1> You are logged in </h1>";
             }
             else if( Message.Text == "YouAreNotLoggedIn")

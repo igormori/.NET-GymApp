@@ -77,12 +77,32 @@
     <Content Include="Content\animate.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="pictures\begining.jpg" />
+    <Content Include="pictures\champ.jpg" />
+    <Content Include="pictures\girl_boxer.jpeg" />
+    <Content Include="pictures\gym.jpg" />
+    <Content Include="pictures\gymlogin.jpg" />
+    <Content Include="pictures\home.jpg" />
+    <Content Include="pictures\home2.jpg" />
+    <Content Include="pictures\home3.jpg" />
+    <Content Include="pictures\icon.jpg" />
+    <Content Include="pictures\icon.png" />
+    <Content Include="pictures\landing1.png" />
+    <Content Include="pictures\landing2.png" />
+    <Content Include="pictures\landing3.jpg" />
+    <Content Include="pictures\landinghome.jpg" />
+    <Content Include="pictures\logo.png" />
+    <Content Include="pictures\note.jpg" />
+    <Content Include="pictures\profile.JPG" />
+    <Content Include="pictures\sprint.jpeg" />
+    <Content Include="pictures\track.jpg" />
     <Content Include="Signup.aspx" />
     <Content Include="AboutUs.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="loginConfirmation.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="SignupConfirmation.aspx" />
+    <Content Include="ExercisePage.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
@@ -236,6 +256,13 @@
     </Compile>
     <Compile Include="tempGridview.aspx.designer.cs">
       <DependentUpon>tempGridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExercisePage.aspx.cs">
+      <DependentUpon>ExercisePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePage.aspx.designer.cs">
+      <DependentUpon>ExercisePage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
