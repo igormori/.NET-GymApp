@@ -35,6 +35,8 @@
     text-align: center;
 }
 
+
+
 /*for login page logo*/
 
 #logo{
@@ -46,4 +48,8 @@
 .input-group {
   padding-bottom: 20px;
   padding-right:50px;
+}
+
+.gifs {
+    border: 5px solid black;
 }

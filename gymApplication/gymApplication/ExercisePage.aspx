@@ -3,23 +3,47 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="container">
-        <div class="row">
-            <div class="col row">
-                <div class="col-10 mx-auto p-3 bg-dark mt-2 ">
-                    <asp:ImageButton ID="ImageButton1" CssClass="img-thumbnail" runat="server" ImageUrl="~/pictures/gym.jpg" />
+    <div class="container-fluid ">
+        <div class="row m-3">
+            <div class="col row text-center border-danger ">
+                <div class="col-10 mx-auto p-3 mt-2 ">
+
+                    <div class="card border-0">
+                        <div class="card-img-top float-left">
+                        <asp:ImageButton ID="ImageButton1" class="gifs"  CssClass="gifs rounded " runat="server" ImageUrl="~/pictures/Abs/crunch1.gif" /> 
+                        </div>
+                        <div class="card-text h3 ">ABS</div>
+                    </div>
+                     
+                    
                 </div>
-                 <div class="col-10 mx-auto p-3 bg-secondary mt-2">
-                    <asp:ImageButton ID="ImageButton2" CssClass="img-thumbnail" runat="server" ImageUrl="~/pictures/girl_boxer.jpeg" />
+                 <div class="col-10 mx-auto p-3 mt-2">
+
+                   <div class="card border-0">
+                        <div class="card-img-top">
+                        <asp:ImageButton ID="ImageButton2" class="gifs" CssClass="gifs rounded " runat="server" ImageUrl="~/pictures/Abs/chest1.gif" />
+                        </div>
+                        <div class="card-text h3 ">CHEST</div>
+                    </div>
                 </div>
-                 <div class="col-10 mx-auto p-3 bg-success mt-2">
-                    <asp:ImageButton ID="ImageButton3" runat="server" />
+                 <div class="col-10 mx-auto p-3 mt-2">
+                   <div class="card border-0">
+                        <div class="card-img-top">
+                        <asp:ImageButton ID="ImageButton3" class="gifs" CssClass="gifs rounded " runat="server" ImageUrl="~/pictures/Abs/back2.gif" />
+                        </div>
+                        <div class="card-text h3 ">BACK</div>
+                    </div>
                 </div>
-                 <div class="col-10 mx-auto p-3  bg-warning mt-2">
-                   <asp:ImageButton ID="ImageButton4" runat="server" />
+                 <div class="col-10 mx-auto p-3  mt-2">
+                    <div class="card border-0">
+                        <div class="card-img-top">
+                        <asp:ImageButton ID="ImageButton4" class="gifs" CssClass="gifs rounded " runat="server" ImageUrl="~/pictures/Abs/chest1.gif" />
+                        </div>
+                        <div class="card-text h3 ">CHEST</div>
+                    </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 bg-dark">
 
             </div>
         </div>

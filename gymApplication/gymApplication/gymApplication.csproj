@@ -77,6 +77,16 @@
     <Content Include="Content\animate.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="pictures\Abs\back2.gif" />
+    <Content Include="pictures\Abs\back3.gif" />
+    <Content Include="pictures\Abs\back4.gif" />
+    <Content Include="pictures\Abs\chest1.gif" />
+    <Content Include="pictures\Abs\chest2.gif" />
+    <Content Include="pictures\Abs\crunch1.gif" />
+    <Content Include="pictures\Abs\crunch1.jpg" />
+    <Content Include="pictures\Abs\crunch2.gif" />
+    <Content Include="pictures\Abs\crunch3.gif" />
+    <Content Include="pictures\Abs\crunch4.gif" />
     <Content Include="pictures\begining.jpg" />
     <Content Include="pictures\champ.jpg" />
     <Content Include="pictures\girl_boxer.jpeg" />
