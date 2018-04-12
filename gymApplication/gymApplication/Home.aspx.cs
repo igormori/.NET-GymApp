@@ -11,6 +11,14 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["loginValidation"] != null)
+            {
+               
+            }
+            else
+            {
+                Response.Redirect("loginConfirmation.aspx?response=YouAreNotLoggedIn");
+            }
 
         }
     }
