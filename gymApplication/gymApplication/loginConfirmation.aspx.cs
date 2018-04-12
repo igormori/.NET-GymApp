@@ -17,6 +17,11 @@ namespace gymApplication
             {
                 Message.Text = "<h1> You are logged in </h1>";
             }
+            else if( Message.Text == "YouAreNotLoggedIn")
+            {
+                Message.Text = "<h1> You must to login to access this page!<h1>";
+                Response.AddHeader("REFRESH", "5;URL=Default.aspx");
+            }
 
         }
     }

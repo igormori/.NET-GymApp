@@ -11,10 +11,18 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["loginValidation"] != null)
+            {
+                name.Text = Session["userName"].ToString();
+                level.Text = Session["level"].ToString();
+                Image1.ImageUrl = "pictures/" + Session["profilePicture"].ToString();
+            }
+            else
+            {
+                Response.Redirect("loginConfirmation.aspx?response=YouAreNotLoggedIn");
+            }
+             
 
-          //  name.Text = Session["userName"].ToString();
-            //level.Text = Session["level"].ToString();
-            //Image1.ImageUrl = "pictures/" + Session["profilePicture"].ToString();
         }
     }
 }
