@@ -12,7 +12,7 @@
                         <div class="card-img-top float-left">
                         <asp:ImageButton ID="ImageButton1" class="gifs"  CssClass="gifs rounded " runat="server" ImageUrl="~/pictures/Abs/crunch1.gif" /> 
                         </div>
-                        <div class="card-text h3 ">ABS</div>
+                        <div class="card-text h3 ">ABS1</div>
                     </div>
                      
                     
