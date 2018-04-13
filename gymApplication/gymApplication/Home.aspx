@@ -53,7 +53,7 @@
 
                             <div class="col-md-12 col-12">
                                 <p class="text-center">
-                                    
+
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button1" runat="server" Text="Sunday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button2" runat="server" Text="Monday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button3" runat="server" Text="Tuesday" />
@@ -61,15 +61,17 @@
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button5" runat="server" Text="Thursday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button6" runat="server" Text="Friday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button7" runat="server" Text="Saturday" />
-                   
+
                                 </p>
                             </div>
 
                         </div>
                         <div class="row justify-content-center">
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
-                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RegistrationConnectionString %>" SelectCommand="SELECT [ExpectedReps], [ActualReps] FROM [UserWorkOuts_Table]"></asp:SqlDataSource>
+
                             <!--graph-->
+                  
                             <div class="col-md-10">
                                 <canvas class="border-success" id="myChart" width="400" height="200"></canvas>
                                 <script>
@@ -80,7 +82,9 @@
                                             labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",],
                                             datasets: [{
                                                 label: '# Completed Workouts',
+
                                                 data: [5, 4, 3, 5, 2, 3, 8],
+
                                                 backgroundColor: [
                                                     'rgba(255, 99, 132, 0.2)',
                                                     'rgba(54, 162, 235, 0.2)',
@@ -90,6 +94,7 @@
                                                     'rgba(255, 159, 64, 0.2)',
                                                     'rgba(255, 99, 132, 0.2)'
                                                 ],
+
                                                 borderColor: [
                                                     'rgba(255,99,132,1)',
                                                     'rgba(54, 162, 235, 1)',
@@ -99,8 +104,38 @@
                                                     'rgba(153, 102, 255, 1)',
                                                     'rgba(255, 159, 64, 1)'
                                                 ],
+
                                                 borderWidth: 1
-                                            }]
+                                            }, {
+                                                    label: '# Completed Workouts',
+
+                                                    data: [5, 4, 3, 5, 2, 3, 8],
+
+                                                    backgroundColor: [
+                                                        'rgba(255, 99, 132, 0.2)',
+                                                        'rgba(54, 162, 235, 0.2)',
+                                                        'rgba(255, 206, 86, 0.2)',
+                                                        'rgba(75, 192, 192, 0.2)',
+                                                        'rgba(153, 102, 255, 0.2)',
+                                                        'rgba(255, 159, 64, 0.2)',
+                                                        'rgba(255, 99, 132, 0.2)'
+                                                    ],
+
+                                                    borderColor: [
+                                                        'rgba(255,99,132,1)',
+                                                        'rgba(54, 162, 235, 1)',
+                                                        'rgba(255, 206, 86, 1)',
+                                                        'rgba(75, 192, 192, 1)',
+                                                        'rgba(153, 102, 255, 1)',
+                                                        'rgba(153, 102, 255, 1)',
+                                                        'rgba(255, 159, 64, 1)'
+                                                    ],
+
+                                                    borderWidth: 1
+                                            }
+
+
+                                            ]
                                         },
                                         options: {
                                             scales: {
