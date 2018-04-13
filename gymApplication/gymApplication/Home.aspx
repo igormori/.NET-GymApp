@@ -67,6 +67,8 @@
 
                         </div>
                         <div class="row justify-content-center">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                             <!--graph-->
                             <div class="col-md-10">
                                 <canvas class="border-success" id="myChart" width="400" height="200"></canvas>
