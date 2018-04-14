@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace gymApplication
 {
@@ -35,28 +32,26 @@ namespace gymApplication
             {
                 try
                 {
+
                     SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
                     connection.Open();
-                    string insertQuery = "INSERT INTO Users (UserEmail, UserName, UserPassword) VALUES(@Email,@UserName,@Password)";
+                    string insertQuery = "INSERT INTO Users (UserEmail, UserName, UserPassword,saltpassword) VALUES(@Email,@UserName,@Password,@saltpassword)";
 
                     SqlCommand command = new SqlCommand(insertQuery, connection);
                     command.Parameters.AddWithValue("@Email", Email.Text);
                     command.Parameters.AddWithValue("@UserName", Username.Text);
                     //
                     string password = Password.Text;
+                    string salt = hashed.salting(10);
+                    command.Parameters.AddWithValue("@saltpassword", salt);
+                    
+                    string hasedpass = hashed.SHA256Hash(password, salt);
+              
+                    command.Parameters.AddWithValue("@Password", hasedpass);
 
-                    // generate a 128-bit salt using a secure PRNG
-                    var hash = System.Text.Encoding.ASCII.GetBytes(password);
-                    var sha1 = new SHA1CryptoServiceProvider();
-                    var sha1hash = sha1.ComputeHash(hash);
-                    var hashedPassword = System.Text.Encoding.ASCII.GetString(sha1hash);
-
-
-                    command.Parameters.AddWithValue("@Password", hashedPassword);
                     command.ExecuteNonQuery();//Execute Query
-                    Response.Redirect("login.aspx");
-                    Response.Write("Registration Successfull");
-
+                    Session["user"] = Email.Text;
+                    Response.Redirect("Home.aspx");
                     connection.Close();
                 }
                 catch (Exception )
@@ -66,6 +61,33 @@ namespace gymApplication
                 }
                 
             }
+
         }
+
+    }
+    public static class hashed
+        {
+        public static string salting(int size)
+        {
+            var rng = new System.Security.Cryptography.RNGCryptoServiceProvider();
+            var buff = new byte[size];
+            rng.GetBytes(buff);
+            return Convert.ToBase64String(buff);
+        }
+        public static string SHA256Hash(string textinput,string salted)
+        {
+            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(textinput + salted);
+            System.Security.Cryptography.SHA256Managed sha256str =
+                new System.Security.Cryptography.SHA256Managed();
+            byte[] hash = sha256str.ComputeHash(bytes);
+            return ByteArrayToHexString(hash);
+
+        }
+        public static string ByteArrayToHexString(byte[] ba)
+        { StringBuilder hex = new StringBuilder(ba.Length * 2);
+            foreach (byte b in ba) hex.AppendFormat("{0:x2}", b);
+            return hex.ToString();
+        }
+
     }
 }

@@ -13,7 +13,10 @@ namespace gymApplication
         {
             
         }
-
+        public void MyLnkButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home.aspx");
+        }
         public void SetCopyrightMessage()
         {
             Copyright.InnerHtml = "&copy; Copyright " + DateTime.Now.Year;
