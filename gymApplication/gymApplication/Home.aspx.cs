@@ -11,7 +11,9 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
+            req1.Text = ""; 
+            comp1.Text = "";
 
         }
     }

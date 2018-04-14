@@ -69,9 +69,12 @@
                         <div class="row justify-content-center">
 
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RegistrationConnectionString %>" SelectCommand="SELECT [ExpectedReps], [ActualReps] FROM [UserWorkOuts_Table]"></asp:SqlDataSource>
+                            
+                            <asp:Label ID="req1" runat="server" Text="Label"></asp:Label>
+                            <asp:Label ID="comp1" runat="server" Text="Label"></asp:Label>
+                            
 
                             <!--graph-->
-                  
                             <div class="col-md-10">
                                 <canvas class="border-success" id="myChart" width="400" height="200"></canvas>
                                 <script>
@@ -133,8 +136,6 @@
 
                                                     borderWidth: 1
                                             }
-
-
                                             ]
                                         },
                                         options: {
