@@ -10,7 +10,7 @@
 namespace gymApplication {
     
     
-    public partial class WebForm7 {
+    public partial class Home {
         
         /// <summary>
         /// Button1 control.

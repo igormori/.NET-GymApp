@@ -76,6 +76,7 @@
     <Content Include="Content\animate.css" />
     <Content Include="Content\animate.min.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="login.aspx" />
     <Content Include="pictures\Abs\back2.gif" />
     <Content Include="pictures\Abs\back3.gif" />
@@ -110,9 +111,10 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="loginConfirmation.aspx" />
-    <Content Include="Home.aspx" />
+    <Content Include="HomeCopy.aspx" />
     <Content Include="SignupConfirmation.aspx" />
     <Content Include="ExercisePage.aspx" />
+    <Content Include="GraphMasterWebPage.Master" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
@@ -196,6 +198,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GraphMasterWebPage.Master.cs">
+      <DependentUpon>GraphMasterWebPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GraphMasterWebPage.Master.designer.cs">
+      <DependentUpon>GraphMasterWebPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
@@ -246,12 +262,12 @@
     <Compile Include="loginConfirmation.aspx.designer.cs">
       <DependentUpon>loginConfirmation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="HomeCopy.aspx.cs">
+      <DependentUpon>HomeCopy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="HomeCopy.aspx.designer.cs">
+      <DependentUpon>HomeCopy.aspx</DependentUpon>
     </Compile>
     <Compile Include="SignupConfirmation.aspx.cs">
       <DependentUpon>SignupConfirmation.aspx</DependentUpon>

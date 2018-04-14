@@ -27,35 +27,35 @@
 
     <!---------------------------- NavBar ---------------------------------------------->
 
- <nav class="navbar navbar-expand-lg navbar-light" style="border-color: #C4DDE0; border-width: 5px;" >
-  <a id="Brand" runat="server" class="navbar-brand" href="Default.aspx">
+    <nav class="navbar navbar-expand-lg navbar-light" style="border-color: #C4DDE0; border-width: 5px;">
+        <a id="Brand" runat="server" class="navbar-brand" href="Default.aspx">
             <img src="pictures/logo.png" width="80px" length="80px">
         </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active p-3">
-        <a class=" text-primary font-weight-bold " href="Home.aspx">Main</a>
-      </li>
-      <li class="nav-item p-3">
-        <a class="text-primary font-weight-bold" href="Profile.aspx" >Profile <span class="ml-2 fa fa-user-circle"></span></a>
-      </li>
-    </ul>
-    
-      <ul class="navbar-nav ml-auto ">
-            <li class="nav-item ">
-        <a class="text-primary font-weight-bold" href="login.aspx" >Sign in<span class="ml-2 fa fa-sign-in"></span></a>
-      </li>
-      <li class="nav-item pl-3">
-        <a class="text-primary font-weight-bold" href="Signup.aspx">Sign up</a>
-      </li>
-      </ul>
-    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active p-3">
+                    <a class=" text-primary font-weight-bold " href="Home.aspx">Main</a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="text-primary font-weight-bold" href="Profile.aspx">Profile <span class="ml-2 fa fa-user-circle"></span></a>
+                </li>
+            </ul>
 
-  </div>
-</nav>
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item ">
+                    <a class="text-primary font-weight-bold" href="login.aspx">Sign in<span class="ml-2 fa fa-sign-in"></span></a>
+                </li>
+                <li class="nav-item pl-3">
+                    <a class="text-primary font-weight-bold" href="Signup.aspx">Sign up</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
     <div class="p-4 bg-dark"></div>
     <!--------- This is where all content goes-------->
 
@@ -67,7 +67,7 @@
         </div>
     </form>
     <!-------------------------- Footer section -------------------------------------->
-    <footer class="page-footer font-small blue-grey lighten-5 pt-0" style=" bottom: 0; width: 100%; height: 80px;">
+    <footer class="page-footer font-small blue-grey lighten-5 pt-0" style="bottom: 0; width: 100%; height: 80px;">
         <div style="background-color: whitesmoke;">
             <div class="container">
                 <!--Grid row-->
@@ -76,48 +76,48 @@
                     <div class="col-12  mb-4 mb-md-0">
                         <div class="row">
                             <div class="col float-left">
-                                       <b>Igor Mori : 101045762</b>
-                        </br>
+                                <b>Igor Mori : 101045762</b>
+                                </br>
                         <b>Sherwayne Walrond 100612847</b>
-                       
+
                             </div>
-                          
+
                             <div class="col float-right">
-                        <b>Dindyal Mursingh : 101045762</b>
-                        </br>
+                                <b>Dindyal Mursingh : 101045762</b>
+                                </br>
                         <b>Farhad Hossain : 101056010</b>
                             </div>
-                                     <div class="col float-right">
-                        <b>Fortune Creig Phiri : 101087294</b>
+                            <div class="col float-right">
+                                <b>Fortune Creig Phiri : 101087294</b>
                             </div>
                         </div>
-                        
-                      
-                      
-                        
-                        
-                            <div class="row mt-2">
-                                <div class="col">
-                                     <a href="Contact.aspx"><strong>Contact Us</strong></a> &nbsp; <a href="AboutUs.aspx"><strong>About Us</strong></a>
-                                </div>
-                                <div class="col">
-                                    <strong ID="Copyright" runat="server" class="navbar-text">&copy; Copyright 2018</strong>
-                                </div>
-                                <div class="col justify-right">
-                        <!--Facebook-->
-                        <a class="fb-ic ml-0" href="https://facebook.com" target="_blank"><i class="fa fa-facebook white-text mr-lg-4"></i></a>
-                        <!--Twitter-->
-                        <a class="tw-ic" href="https://twitter.com" target="_blank"><i class="fa fa-twitter white-text mr-lg-4"></i></a>
-                        <!--Google +-->
-                        <a class="gplus-ic" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus white-text mr-lg-4"></i></a>
-                        <!--Linkedin-->
-                        <a class="li-ic" href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin white-text mr-lg-4"></i></a>
-                        <!--Instagram-->
-                        <a class="ins-ic" href="https://instagram.com" target="_blank"><i class="fa fa-instagram white-text mr-lg-4"></i></a>
-                    </div>
-                    </div> 
-                        
-                       <%-- </br>
+
+
+
+
+
+                        <div class="row mt-2">
+                            <div class="col">
+                                <a href="Contact.aspx"><strong>Contact Us</strong></a> &nbsp; <a href="AboutUs.aspx"><strong>About Us</strong></a>
+                            </div>
+                            <div class="col">
+                                <strong id="Copyright" runat="server" class="navbar-text">&copy; Copyright 2018</strong>
+                            </div>
+                            <div class="col justify-right">
+                                <!--Facebook-->
+                                <a class="fb-ic ml-0" href="https://facebook.com" target="_blank"><i class="fa fa-facebook white-text mr-lg-4"></i></a>
+                                <!--Twitter-->
+                                <a class="tw-ic" href="https://twitter.com" target="_blank"><i class="fa fa-twitter white-text mr-lg-4"></i></a>
+                                <!--Google +-->
+                                <a class="gplus-ic" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus white-text mr-lg-4"></i></a>
+                                <!--Linkedin-->
+                                <a class="li-ic" href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin white-text mr-lg-4"></i></a>
+                                <!--Instagram-->
+                                <a class="ins-ic" href="https://instagram.com" target="_blank"><i class="fa fa-instagram white-text mr-lg-4"></i></a>
+                            </div>
+                        </div>
+
+                        <%-- </br>
                         <b>Igor Mori | 101045762</b>
                         </br>
                         <b>Sherwayne Walrond | 100612847</b>
@@ -130,7 +130,7 @@
                     </div>
                     <!--Grid column-->
                     <!--Grid column-->
-                
+
                     <!--Grid column-->
                 </div>
                 <!--Grid row-->
@@ -142,8 +142,8 @@
 
     
        <script src="Scripts/jquery-3.3.1.min.js"></script>
-       <script src="Scripts/app.js"></script>
-       <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
 
 </body>
 </html>
