@@ -12,15 +12,19 @@ namespace gymApplication
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack) {
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
-                connection.Open();
-                string checkEmail = "SELECT COUNT(*) FROM Users WHERE UserEmail = '" + Email.Text + "'";
-                SqlCommand command = new SqlCommand(checkEmail, connection);
-                int temp = Convert.ToInt32(command.ExecuteScalar().ToString());
-                if (temp == 1) {
-                    Response.Write("User already Exists");
+                using (SqlConnection connection = new SqlConnection(hashed.constring))
+                {
+                    connection.Open();
+                    string checkEmail = "SELECT COUNT(*) FROM Users WHERE UserEmail = '" + Email.Text + "'";
+                    SqlCommand command = new SqlCommand(checkEmail, connection);
+                    int temp = Convert.ToInt32(command.ExecuteScalar().ToString());
+                    if (temp == 1)
+                    {
+                        Response.Write("User already Exists");
+                    }
+
                 }
-                connection.Close();
+                
             }
         }
 
@@ -30,10 +34,8 @@ namespace gymApplication
             if (IsPostBack&& Page.IsValid)
       
             {
-                try
+                using (SqlConnection connection = new SqlConnection(hashed.constring))
                 {
-
-                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
                     connection.Open();
                     string insertQuery = "INSERT INTO Users (UserEmail, UserName, UserPassword,saltpassword) VALUES(@Email,@UserName,@Password,@saltpassword)";
 
@@ -44,21 +46,17 @@ namespace gymApplication
                     string password = Password.Text;
                     string salt = hashed.salting(10);
                     command.Parameters.AddWithValue("@saltpassword", salt);
-                    
+
                     string hasedpass = hashed.SHA256Hash(password, salt);
-              
+
                     command.Parameters.AddWithValue("@Password", hasedpass);
 
                     command.ExecuteNonQuery();//Execute Query
                     Session["user"] = Email.Text;
                     Response.Redirect("Home.aspx");
-                    connection.Close();
-                }
-                catch (Exception )
-                {
-
-                    Response.Write("Ooops something went wrong...");
-                }
+                    
+                }                   
+ 
                 
             }
 
@@ -67,6 +65,7 @@ namespace gymApplication
     }
     public static class hashed
         {
+        public static string constring = ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString;
         public static string salting(int size)
         {
             var rng = new System.Security.Cryptography.RNGCryptoServiceProvider();

@@ -16,6 +16,7 @@
 					<asp:BoundField DataField="UserEmail" HeaderText="UserEmail" ReadOnly="True" SortExpression="UserEmail" />
 					<asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" />
 					<asp:BoundField DataField="UserPassword" HeaderText="UserPassword" SortExpression="UserPassword" />
+                    <asp:BoundField DataField="saltpassword" HeaderText="saltpassword" SortExpression="saltpassword" />
 				</Columns>
 			</asp:GridView>
         </div>

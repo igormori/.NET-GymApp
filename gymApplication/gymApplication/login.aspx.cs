@@ -15,7 +15,7 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             string category = Request.QueryString["logout"];
             if (category == "destroy")
             {
@@ -26,7 +26,7 @@ namespace gymApplication
                     Password.Attributes["Value"] = Request.Cookies["userpass"].Value;
                     remembercheck.Checked = true;
                 }
-                catch(Exception)
+                catch (Exception)
                 {
                     Response.Redirect("login.aspx?");
                 }
@@ -37,7 +37,7 @@ namespace gymApplication
             {
                 Response.Redirect("Home.aspx?");
             }
-            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -46,51 +46,54 @@ namespace gymApplication
 
             if (IsPostBack && Page.IsValid)
             {
-                
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RegistrationConnectionString"].ConnectionString);
-            connection.Open(); 
-
-                //query
-            SqlCommand cmd = connection.CreateCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "SELECT * FROM Users WHERE UserEmail = '" + Email.Text + "'";
-            DataTable dt = new DataTable();
-            SqlDataAdapter sqlad = new SqlDataAdapter(cmd);
-            sqlad.Fill(dt);
-                //pass Asdf1234! for dfdff and Farhad123! forother
-
-                //hasing and salting
-
-                string salt = dt.Rows[0]["saltpassword"].ToString();
-                string hasandsalted = hashed.SHA256Hash(Password.Text, salt);
-
-                if (dt.Rows.Count !=0&& hasandsalted== dt.Rows[0]["UserPassword"].ToString())
+                using (SqlConnection connection = new SqlConnection(hashed.constring))
                 {
-                    if(remembercheck.Checked)
+                    connection.Open();
+                    //query
+                    SqlCommand cmd = connection.CreateCommand();
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM Users WHERE UserEmail = '" + Email.Text + "'";
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sqlad = new SqlDataAdapter(cmd);
+                    sqlad.Fill(dt);
+                    //pass Asdf1234! for dfdff and Farhad123! for another
+
+                    //hasing and salting
+
+                    string salt = dt.Rows[0]["saltpassword"].ToString();
+                    string hasandsalted = hashed.SHA256Hash(Password.Text, salt);
+
+                    if (dt.Rows.Count != 0 && hasandsalted == dt.Rows[0]["UserPassword"].ToString())
                     {
-                        Response.Cookies["username"].Value = Email.Text;
-                        Response.Cookies["userpass"].Value = Password.Text;
-                        Response.Cookies["username"].Expires = DateTime.Now.AddMinutes(1);
-                        Response.Cookies["userpass"].Expires = DateTime.Now.AddMinutes(1);
+                        if (remembercheck.Checked)
+                        {
+                            Response.Cookies["username"].Value = Email.Text;
+                            Response.Cookies["userpass"].Value = Password.Text;
+                            Response.Cookies["username"].Expires = DateTime.Now.AddHours(24);
+                            Response.Cookies["userpass"].Expires = DateTime.Now.AddHours(24);
 
 
+                        }
+                        else
+                        {
+                            Response.Cookies["username"].Expires = DateTime.Now.AddDays(-1);
+                            Response.Cookies["userpass"].Expires = DateTime.Now.AddDays(-1);
+                        }
+                        Session["user"] = Email.Text;
+                        Response.Redirect("Home.aspx?");
                     }
+
                     else
                     {
-                        Response.Cookies["username"].Expires = DateTime.Now.AddDays(-1);
-                        Response.Cookies["userpass"].Expires = DateTime.Now.AddDays(-1);
+
+                        labelinvalid.Text = "Invalid User Name and Password";
                     }
-                    Session["user"] = Email.Text;
-                    Response.Redirect("Home.aspx?");
-                }
 
-                else
-                {
-                    
-                    labelinvalid.Text = "Invalid User Name and Password";
                 }
-
             }
+
+                    
+               
 
 
 
