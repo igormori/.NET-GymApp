@@ -111,10 +111,10 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="loginConfirmation.aspx" />
-    <Content Include="HomeCopy.aspx" />
     <Content Include="SignupConfirmation.aspx" />
     <Content Include="ExercisePage.aspx" />
     <Content Include="GraphMasterWebPage.Master" />
+    <Content Include="workouts.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
@@ -262,12 +262,6 @@
     <Compile Include="loginConfirmation.aspx.designer.cs">
       <DependentUpon>loginConfirmation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HomeCopy.aspx.cs">
-      <DependentUpon>HomeCopy.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="HomeCopy.aspx.designer.cs">
-      <DependentUpon>HomeCopy.aspx</DependentUpon>
-    </Compile>
     <Compile Include="SignupConfirmation.aspx.cs">
       <DependentUpon>SignupConfirmation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -289,6 +283,13 @@
     <Compile Include="ExercisePage.aspx.designer.cs">
       <DependentUpon>ExercisePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="workouts.aspx.cs">
+      <DependentUpon>workouts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="workouts.aspx.designer.cs">
+      <DependentUpon>workouts.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
@@ -308,7 +309,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49943</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
