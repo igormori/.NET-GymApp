@@ -3,10 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
-        <div class="row mt-3">
+    <div class="container mx-auto">
+        <div class="row mt-3 col-10">
             <div class="col">
-                <ul class="nav nav-dark nav-tabs p-2">
+                <ul class="nav nav-tabs  p-2">
                     <li class="active"><a data-toggle="tab" class="nav-link" href="#ABS">ABS</a></li>
                     <li><a data-toggle="tab" class="nav-link" href="#LEGS">LEGS</a></li>
                     <li><a data-toggle="tab" class="nav-link" href="#BICEPS">BICEPS</a></li>
@@ -16,12 +16,12 @@
             </div>
 
         </div>
-        <div class="row text-center">
+        <div class="row text-center mt-2">
 
             <div class="col-10 ">
-                <div class="tab-content">
+                <div class="tab-content ">
 
-                    <div id="ABS" class="tab-pane fade in active">
+                    <div id="ABS" class="tab-pane  active">
                         <div class="row">
                             <div class="col">
                                 <h3>ABS</h3>
@@ -88,8 +88,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-3 mx-auto">
-            <button class="btn btn-success" type="submit">LOG WORKOUT</button>
+        <div class="row mb-3 align-contents-center">
+            <button class="btn btn-success align-center" type="submit">LOG WORKOUT</button>
         </div>
         </div>
 </asp:Content>
