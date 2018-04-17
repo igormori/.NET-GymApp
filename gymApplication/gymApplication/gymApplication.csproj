@@ -112,7 +112,9 @@
     <Content Include="Contact.aspx" />
     <Content Include="loginConfirmation.aspx" />
     <Content Include="SignupConfirmation.aspx" />
-    <Content Include="ExercisePage.aspx" />
+    <Content Include="ExercisePage.aspx">
+      <BrowseToURL>~/ExercisePage.aspx</BrowseToURL>
+    </Content>
     <Content Include="GraphMasterWebPage.Master" />
     <Content Include="workouts.aspx" />
     <None Include="packages.config" />
