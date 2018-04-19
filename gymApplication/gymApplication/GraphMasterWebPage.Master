@@ -143,7 +143,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script>
         var ctx = document.getElementById("myChart").getContext('2d');
-        var completed = 5;
+        var completed = document.getElementById("MainContent_results").textContent;
+        completed = Number(completed);
         var required = 7 - completed;
         var myChart = new Chart(ctx, {
             type: 'pie',

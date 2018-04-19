@@ -9,9 +9,11 @@ namespace gymApplication
 {
     public partial class WebForm10 : System.Web.UI.Page
     {
+        int count = 0;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            int count = 0;
+            
 
             if (CheckBox1.Checked == true)
             {
@@ -41,7 +43,7 @@ namespace gymApplication
             {
                 count++;
             }
-            results.Text = count.ToString();
+           
 
         }
          protected void SubmitResults_Click(Object sender,
@@ -49,8 +51,8 @@ namespace gymApplication
         {
             // When the button is clicked,
             // change the button text, and disable it.
+            results.Text = count.ToString();
 
-            results.Text = ("OMG! it worked.");
         }
 
 
