@@ -44,9 +44,14 @@ namespace gymApplication
             results.Text = count.ToString();
 
         }
-        void Submit_results_Click(Object sender, EventArgs e)
+        void SubmitResults_Click(Object sender,
+                          EventArgs e)
         {
-            results.Text = ("hello ");
+            // When the button is clicked,
+            // change the button text, and disable it.
+
+            results.Text = ("OMG! it worked.");
         }
+
     }
 }

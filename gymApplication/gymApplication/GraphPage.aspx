@@ -72,10 +72,8 @@
             <div class="col-sm-12">
                 <div style="height: 50px;"></div>
                 <canvas id="myChart" style="width: 312px; height: 130px"></canvas>
-                 <div style="height: 50px;"></div>
-
-                <asp:Button ID="Submit_results" OnClick="Submit_results_Click" Text="submit" runat="server" />
-
+                <div style="height: 50px;"></div>
+                <asp:Button ID="Button1" runat="server" Text="Button" OnClick="SubmitResults_Click" />
             </div>
         </div>
     </div>

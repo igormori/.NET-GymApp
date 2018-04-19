@@ -85,12 +85,12 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.CheckBox CheckBox7;
         
         /// <summary>
-        /// Submit_results control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Submit_results;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
