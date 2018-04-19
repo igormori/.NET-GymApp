@@ -12,17 +12,7 @@ namespace gymApplication
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            int count = 0;
-
-            
-           for (int i = 0; i<25; i++)
-            {
-                DropDownList1.Items.Insert(i, i.ToString());
-                count++;
-
-            }
-
-
+          
 
 
 

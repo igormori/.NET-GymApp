@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Data.SqlClient;
+using System.Configuration;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Security.Cryptography;
 
 namespace gymApplication
 {
@@ -11,18 +15,29 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["loginValidation"] != null)
+            using (SqlConnection connection = new SqlConnection(hashed.constring))
             {
-                name.Text = Session["userName"].ToString();
-                level.Text = Session["level"].ToString();
-                Image1.ImageUrl = "pictures/" + Session["profilePicture"].ToString();
-            }
-            else
-            {
-                Response.Redirect("loginConfirmation.aspx?response=YouAreNotLoggedIn");
-            }
-             
+                if(Session["user"] != null)
+                {
+                    connection.Open();
+                    //query
+                    SqlCommand cmd = connection.CreateCommand();
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM Users WHERE UserEmail = '" + Session["user"].ToString() + "'";
+                    DataTable dt = new DataTable();
+                    SqlDataAdapter sqlad = new SqlDataAdapter(cmd);
+                    name.Text = cmd.Parameters["userName"].ToString();
+                }
+                else
+                {
+                    Response.Redirect("Home.aspx");
+                }
+               
 
+
+
+
+            }
         }
     }
 }
