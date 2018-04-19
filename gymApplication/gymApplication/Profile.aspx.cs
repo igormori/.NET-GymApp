@@ -15,22 +15,29 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SqlCommand com;
+            string cmd;
             using (SqlConnection connection = new SqlConnection(hashed.constring))
             {
+
                 if(Session["user"] != null)
                 {
                     connection.Open();
                     //query
-                    SqlCommand cmd = connection.CreateCommand();
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = "SELECT * FROM Users WHERE UserEmail = '" + Session["user"].ToString() + "'";
+                
+                    cmd = "SELECT * FROM Users WHERE UserEmail = '" + Session["user"].ToString() + "'";
                     DataTable dt = new DataTable();
-                    SqlDataAdapter sqlad = new SqlDataAdapter(cmd);
-                    name.Text = cmd.Parameters["userName"].ToString();
+                    com = new SqlCommand(cmd, connection);
+                    SqlDataReader reader = com.ExecuteReader();
+
+                    reader.Read();
+                    name.Text = reader["UserName"].ToString();
+                    bio.Text = reader["bio"].ToString();
+                    Image1.ImageUrl = reader["picture_url"].ToString();
                 }
                 else
                 {
-                    Response.Redirect("Home.aspx");
+                    Response.Redirect("Default.aspx");
                 }
                
 
