@@ -31,22 +31,13 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// HyperLink1 control.
+        /// AbsList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
-        
-        /// <summary>
-        /// HyperLink2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.DropDownList AbsList1;
         
         /// <summary>
         /// Label3 control.
@@ -67,22 +58,13 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// HyperLink3 control.
+        /// AbsList2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
-        
-        /// <summary>
-        /// HyperLink4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        protected global::System.Web.UI.WebControls.DropDownList AbsList2;
         
         /// <summary>
         /// Label4 control.
@@ -103,22 +85,13 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// HyperLink5 control.
+        /// AbsList3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink5;
-        
-        /// <summary>
-        /// HyperLink6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink6;
+        protected global::System.Web.UI.WebControls.DropDownList AbsList3;
         
         /// <summary>
         /// Label5 control.
@@ -139,22 +112,13 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
-        /// HyperLink7 control.
+        /// AbsList4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink7;
-        
-        /// <summary>
-        /// HyperLink8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink8;
+        protected global::System.Web.UI.WebControls.DropDownList AbsList4;
         
         /// <summary>
         /// Label6 control.
@@ -175,22 +139,13 @@ namespace gymApplication {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
-        /// HyperLink9 control.
+        /// AbsList5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink9;
-        
-        /// <summary>
-        /// HyperLink10 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink10;
+        protected global::System.Web.UI.WebControls.DropDownList AbsList5;
         
         /// <summary>
         /// Label11 control.

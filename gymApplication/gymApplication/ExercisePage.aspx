@@ -36,8 +36,7 @@
                                         </td>
                                         <td>
                                             <asp:Label ID="Label1" runat="server" Text="0" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                            <asp:HyperLink ID="HyperLink1" href="ExercisePage.aspx?Count=1" runat="server"><i class=" fa fa-arrow-up fa-2x"></i></asp:HyperLink>
-                                            <asp:HyperLink ID="HyperLink2" href="?Count=-1" runat="server"><i class=" fa fa-arrow-down fa-2x "></i></asp:HyperLink>
+                                            <asp:DropDownList ID="AbsList1" runat="server"></asp:DropDownList>
                                             </tr>
                                     <tr>
                                         <td>
@@ -46,8 +45,7 @@
                                              </td>
                                         <td>
                                             <asp:Label ID="Label7" runat="server" Text="0" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                            <asp:HyperLink ID="HyperLink3" href="ExercisePage.aspx?Count=1" runat="server"><i class=" fa fa-arrow-up fa-2x"></i></asp:HyperLink>
-                                            <asp:HyperLink ID="HyperLink4" href="?Count=-1" runat="server"><i class=" fa fa-arrow-down fa-2x "></i></asp:HyperLink>
+                                            <asp:DropDownList ID="AbsList2" runat="server"></asp:DropDownList>
                                     </tr>
                                     <tr>
                                         <td>
@@ -59,8 +57,7 @@
                                         <td>
                                        
                                              <asp:Label ID="Label8" runat="server" Text="0" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                            <asp:HyperLink ID="HyperLink5" href="ExercisePage.aspx?Count=1" runat="server"><i class=" fa fa-arrow-up fa-2x"></i></asp:HyperLink>
-                                            <asp:HyperLink ID="HyperLink6" href="?Count=-1" runat="server"><i class=" fa fa-arrow-down fa-2x "></i></asp:HyperLink>
+                                            <asp:DropDownList ID="AbsList1" runat="server"></asp:DropDownList>
                                     </tr>
                                     <tr>
                                         <td>
@@ -72,8 +69,7 @@
                                         <td>
                                        
                                               <asp:Label ID="Label9" runat="server" Text="0" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                            <asp:HyperLink ID="HyperLink7" href="ExercisePage.aspx?Count=1" runat="server"><i class=" fa fa-arrow-up fa-2x"></i></asp:HyperLink>
-                                            <asp:HyperLink ID="HyperLink8" href="?Count=-1" runat="server"><i class=" fa fa-arrow-down fa-2x "></i></asp:HyperLink>
+                                           <asp:DropDownList ID="AbsList3" runat="server"></asp:DropDownList>
                                     </tr>
                                     <tr>
                                         <td>
@@ -84,8 +80,7 @@
                                         <td>
                                        
                                               <asp:Label ID="Label10" runat="server" Text="0" Font-Bold="True" Font-Size="X-Large"></asp:Label>
-                                            <asp:HyperLink ID="HyperLink9" href="ExercisePage.aspx?Count=1" runat="server"><i class=" fa fa-arrow-up fa-2x"></i></asp:HyperLink>
-                                            <asp:HyperLink ID="HyperLink10" href="?Count=-1" runat="server"><i class=" fa fa-arrow-down fa-2x "></i></asp:HyperLink>
+                                            <asp:DropDownList ID="AbsList4" runat="server"></asp:DropDownList>
 
                                         </td>
                                     </tr>
