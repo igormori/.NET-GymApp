@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GraphMasterWebPage.Master" AutoEventWireup="true" CodeBehind="Graph.aspx.cs" Inherits="gymApplication.WebForm7" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -13,7 +15,7 @@
                             <h1 class="display-4">Weekly Progress</h1>
                         </div>
                     </div>
-                    <div class="col-sm-12" style="background-color: blue;">
+                    <div class="col-sm-12">
                         <div class="row justify-content-md-center">
                             <div class="col-sm-1">
                                 <h1 class="display-3">S</h1>
@@ -38,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12" style="background-color: lightblue;">
+                    <div class="col-sm-12">
                         <div class="row justify-content-md-center">
                             <div class="col-sm-1">
                                 <asp:CheckBox ID="CheckBox1" runat="server" />
@@ -65,8 +67,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12" style="background-color: pink;">
-                <p>Sed ut perspiciatis...</p>
+            <div class="col-sm-12">
+                <canvas id="myChart" style="width: 312px; height: 130px"></canvas>
             </div>
         </div>
     </div>
