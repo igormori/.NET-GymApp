@@ -143,13 +143,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script>
         var ctx = document.getElementById("myChart").getContext('2d');
+        var completed = 5;
+        var required = 7 - completed;
         var myChart = new Chart(ctx, {
             type: 'pie',
             data: {
                 labels: ["Completed", "Required"],
                 datasets: [{
                     label: '# of Votes',
-                    data: [4, 3],
+                    data: [completed, required],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)'
