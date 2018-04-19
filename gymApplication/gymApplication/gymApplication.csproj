@@ -116,6 +116,7 @@
       <BrowseToURL>~/ExercisePage.aspx</BrowseToURL>
     </Content>
     <Content Include="GraphMasterWebPage.Master" />
+    <Content Include="Graph.aspx" />
     <Content Include="workouts.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
@@ -284,6 +285,13 @@
     </Compile>
     <Compile Include="ExercisePage.aspx.designer.cs">
       <DependentUpon>ExercisePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Graph.aspx.cs">
+      <DependentUpon>Graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Graph.aspx.designer.cs">
+      <DependentUpon>Graph.aspx</DependentUpon>
     </Compile>
     <Compile Include="workouts.aspx.cs">
       <DependentUpon>workouts.aspx</DependentUpon>
