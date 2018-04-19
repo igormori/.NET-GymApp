@@ -44,7 +44,7 @@ namespace gymApplication
             results.Text = count.ToString();
 
         }
-        void SubmitResults_Click(Object sender,
+         protected void SubmitResults_Click(Object sender,
                           EventArgs e)
         {
             // When the button is clicked,
@@ -52,6 +52,7 @@ namespace gymApplication
 
             results.Text = ("OMG! it worked.");
         }
+
 
     }
 }
