@@ -12,8 +12,8 @@
                     <div class="col-sm-12">
                         <div class="row justify-content-md-center">
                             <h1 class="display-4">Weekly Progress</h1>
+                            <asp:Label ID="results" runat="server" Text="hey"></asp:Label>
                         </div>
-                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                     </div>
                     <div style="height: 50px;"></div>
                     <div class="col-sm-12">
@@ -73,6 +73,9 @@
                 <div style="height: 50px;"></div>
                 <canvas id="myChart" style="width: 312px; height: 130px"></canvas>
                  <div style="height: 50px;"></div>
+
+                <asp:Button ID="Submit_results" OnClick="Submit_results_Click" Text="submit" runat="server" />
+
             </div>
         </div>
     </div>
