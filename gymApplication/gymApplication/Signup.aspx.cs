@@ -37,7 +37,7 @@ namespace gymApplication
                 using (SqlConnection connection = new SqlConnection(hashed.constring))
                 {
                     connection.Open();
-                    string insertQuery = "INSERT INTO Users (UserEmail, UserName, UserPassword,saltpassword) VALUES(@Email,@UserName,@Password,@saltpassword)";
+                    string insertQuery = "INSERT INTO GraphTable (Sunday, Monday, Tuesday, Wednesday, Thrursday, Friday, Saturday) VALUES(@Email,@UserName,@Password,@saltpassword)";
 
                     SqlCommand command = new SqlCommand(insertQuery, connection);
                     command.Parameters.AddWithValue("@Email", Email.Text);

@@ -12,7 +12,9 @@
                     <div class="col-sm-12">
                         <div class="row justify-content-md-center">
                             <h1 class="display-4">Weekly Progress</h1>
-                            <asp:Label ID="results" runat="server" Text="hey"></asp:Label>
+                            <div style ="color:white">
+                            <asp:Label ID="results" runat="server"></asp:Label>
+                            </div>
                         </div>
                     </div>
                     <div style="height: 50px;"></div>
