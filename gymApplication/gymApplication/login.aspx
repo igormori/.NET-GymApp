@@ -66,6 +66,12 @@
                         <asp:CheckBox ID="remembercheck" runat="server" />
                     </div>
                 </div>
+                <div class="row mt-lg-12 mt-md-12 mt-3">
+                    <div class="col text-center">
+                        <a class=" text-primary font-weight-bold " href="forgotpassword.aspx">Forgot Password?</a>
+                    </div>
+
+                </div>
                 <div class="row mt-lg-3 mt-md-3 mb-3 border">
                     <div class="p-3">
                         <b>Login Instuctions</b>

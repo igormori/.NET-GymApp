@@ -103,5 +103,10 @@ namespace gymApplication
         {
 
         }
+
+        protected void forgotpassword_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("forgotpassword.aspx");
+        }
     }
 }
