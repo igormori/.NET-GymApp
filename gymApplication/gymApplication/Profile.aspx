@@ -15,7 +15,9 @@
             <asp:Image ID="Image1" runat="server" src="pictures/profile.jpg" CssClass="img-fluid img-thumbnail fa-circle" width="250px" height="250px" />
        
             <h1><asp:Label ID="name" runat="server" Text="Label"></asp:Label></h1>
-            <h2><asp:Label ID="level" runat="server" Text="Label"></asp:Label></h2>
+            <h2><asp:Label ID="bio" runat="server" Text="Label"></asp:Label></h2>
+
+            <asp:Button class="btn btn-lg btn-primary" ID="exercises" runat="server" PostBackUrl="~/ExercisePage.aspx" Text="Set your training" />
       
             <i class="fas fa-chart-line"></i>
         </div>

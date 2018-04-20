@@ -4,6 +4,7 @@
 
 <html>
 <head runat="server">
+
     <meta charset="uft-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
@@ -139,9 +140,34 @@
     </footer>
 
     <! ---------- JavaScript Section------------ >
-
-    
-       <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var completed = document.getElementById("MainContent_results").textContent;
+        completed = Number(completed);
+        var required = 7 - completed;
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ["Completed", "Required"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [completed, required],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)'
+                        
+                    ],
+                    borderWidth: 1
+                }]
+            },
+        });
+    </script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
     <script src="Scripts/app.js"></script>
     <script src="Scripts/bootstrap.js"></script>
 
