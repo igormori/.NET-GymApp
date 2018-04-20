@@ -37,7 +37,8 @@ namespace gymApplication
                 }
                 else
                 {
-                    Response.Redirect("Default.aspx");
+                    Response.Redirect("login.aspx");
+                    Response.Write("<span class='alert-danger'>Please login to view profile</span>");
                 }
                
 
