@@ -15,6 +15,11 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+                string resetpass = Request.QueryString["reset"];
+                if(resetpass=="success")
+                {
+                    lblsuccess.Text = "Password has changed successfully";
+                }
 
         }
 
@@ -33,6 +38,7 @@ namespace gymApplication
                         string s = "UPDATE Users set saltpassword = '" + salt + "', UserPassword ='" + hasedpass + "'where UserEmail='" + Session["resetemail"] + "'";
                         SqlCommand command = new SqlCommand(s, connection);
                         command.ExecuteNonQuery();
+                        Response.Redirect("ResetPage.aspx?reset=success");
 
                     }
                 }

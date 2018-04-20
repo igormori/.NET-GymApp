@@ -46,12 +46,26 @@
             </ul>
 
             <ul class="navbar-nav ml-auto ">
+                <%if (Session["user"] != null)
+                    {%>
                 <li class="nav-item ">
+                    <a class="text-primary font-weight-bold" href="login.aspx?logout=destroy">Log out<span class="ml-2 fa fa-sign-in"></span></a>
+
+                   
+                </li>
+
+                <%}
+                else
+                {  %>
+                <li class="nav-item ">
+
                     <a class="text-primary font-weight-bold" href="login.aspx">Sign in<span class="ml-2 fa fa-sign-in"></span></a>
                 </li>
+                
                 <li class="nav-item pl-3">
                     <a class="text-primary font-weight-bold" href="Signup.aspx">Sign up</a>
                 </li>
+                <%} %>
             </ul>
 
 

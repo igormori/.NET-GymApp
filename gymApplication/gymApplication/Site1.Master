@@ -67,10 +67,11 @@
 
                     <a class="text-primary font-weight-bold" href="login.aspx">Sign in<span class="ml-2 fa fa-sign-in"></span></a>
                 </li>
-                <%} %>
+               
                 <li class="nav-item pl-3">
                     <a class="text-primary font-weight-bold" href="Signup.aspx">Sign up</a>
                 </li>
+                 <%} %>
             </ul>
 
 
