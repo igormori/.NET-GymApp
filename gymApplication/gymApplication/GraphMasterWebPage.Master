@@ -57,18 +57,31 @@
 
         </div>
     </nav>--%>
-
-
+    <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4"><span class="text-danger">Gym</span><span class="text-primary small">HUB</span></h5>
+      <span class="text-muted">Here with you for every squat, lunge, pull-up, Arnold-press, you name it.</span>
+        <span class="text-danger">We got you back</span>
+    </div>
+  </div>
   <nav class="navbar navbar-dark bg-dark">
-   <a id="Brand" runat="server" class="navbar-brand float-left" href="Default.aspx">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+       
+   <a id="Brand" runat="server" class="navbar-brand" href="Default.aspx">
             <img src="pictures/logo.png" width="80px" length="80px">
         </a>
-      <a class=" text-primary font-weight-bold float-left " href="Home.aspx">Home</a>
-      <a class="text-primary font-weight-bold float-left" href="Profile.aspx">Profile</a>
-      <a class="text-primary font-weight-bold float-left" href="Exercises.aspx">Exercises</a>
-       <a class="text-primary font-weight-bold float-right" href="login.aspx">SignOut</a>
-  </nav>
+      <a class=" text-primary font-weight-bold" href="Home.aspx">Home</a>
+      <a class="text-primary font-weight-bold" href="Profile.aspx">Profile</a>
+      <a class="text-primary font-weight-bold" href="Exercises.aspx">Exercises</a>
+       <a class="text-primary font-weight-bold" href="login.aspx">SignOut</a>
 
+  </nav>
+</div>
+
+  
     <!--------- This is where all content goes-------->
 
 
