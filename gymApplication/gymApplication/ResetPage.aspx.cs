@@ -11,7 +11,7 @@ using System.Security.Cryptography;
 
 namespace gymApplication
 {
-    public partial class WebForm10 : System.Web.UI.Page
+    public partial class WebForm11 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,7 +30,7 @@ namespace gymApplication
                         string salt = hashed.salting(10);
                         string hasedpass = hashed.SHA256Hash(resetpassword, salt);
                         connection.Open();
-                        string s = "UPDATE Users set saltpassword = '" + salt + "', UserPassword ='" + hasedpass + "'where UserEmail='" + Session["resetemail"]+"'";
+                        string s = "UPDATE Users set saltpassword = '" + salt + "', UserPassword ='" + hasedpass + "'where UserEmail='" + Session["resetemail"] + "'";
                         SqlCommand command = new SqlCommand(s, connection);
                         command.ExecuteNonQuery();
 
@@ -42,10 +42,16 @@ namespace gymApplication
                 lblreset.Text = "Password not matched, Try again";
             }
 
-            }
-
-
-
-
         }
+
+
+
+
     }
+}
+
+
+
+
+
+

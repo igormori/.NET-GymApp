@@ -16,8 +16,8 @@
        
             <h1><asp:Label ID="name" runat="server" Text="Label"></asp:Label></h1>
             <h2><asp:Label ID="bio" runat="server" Text="Label"></asp:Label></h2>
-
-            <asp:Button class="btn btn-lg btn-primary" ID="exercises" runat="server" PostBackUrl="~/ExercisePage.aspx" Text="Set your training" />
+            <asp:Button CssClass="btn btn-lg btn-primary" ID="Button1" runat="server" Text="Set your Training" Width="200px" PostBackUrl="~/ExercisePage.aspx" />
+            
       
             <i class="fas fa-chart-line"></i>
         </div>

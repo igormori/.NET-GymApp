@@ -10,7 +10,7 @@
 namespace gymApplication {
     
     
-    public partial class WebForm10 {
+    public partial class WebForm11 {
         
         /// <summary>
         /// RequiredFieldValidator1 control.

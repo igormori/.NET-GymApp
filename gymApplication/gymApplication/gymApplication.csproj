@@ -118,6 +118,8 @@
     <Content Include="GraphMasterWebPage.Master" />
     <Content Include="Exercises.aspx" />
     <Content Include="GraphPage.aspx" />
+    <Content Include="ResetPage.aspx" />
+    <Content Include="forgotpassword.aspx" />
     <Content Include="workouts.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
@@ -300,6 +302,20 @@
     </Compile>
     <Compile Include="GraphPage.aspx.designer.cs">
       <DependentUpon>GraphPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPage.aspx.cs">
+      <DependentUpon>ResetPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPage.aspx.designer.cs">
+      <DependentUpon>ResetPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.designer.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="workouts.aspx.cs">
       <DependentUpon>workouts.aspx</DependentUpon>

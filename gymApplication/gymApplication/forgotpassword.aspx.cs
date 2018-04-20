@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,7 @@ using System.Data;
 
 namespace gymApplication
 {
-    public partial class WebForm7 : System.Web.UI.Page
+    public partial class WebForm12 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
