@@ -11,7 +11,7 @@
                 <h3>Legs</h3>
             </div>
 
-          <h3><asp:Label ID="leg1" runat="server" Text="Label"></asp:Label></h3>
+          <h3><asp:Label ID="leg1" runat="server" Text=""></asp:Label></h3>
             <div class=" m-2 p-2">
                 <asp:Label ID="leg1d" runat="server" Text="Label"></asp:Label></br>
             </div>
