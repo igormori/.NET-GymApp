@@ -76,7 +76,6 @@
                              <div class="row mt-2">
                                 <div class="col-sm-12">
                                     <div class="row justify-content-md-center">
-
                                         <div style="color: white">
                                             <asp:Label ID="results" runat="server"></asp:Label>
                                         </div>
@@ -186,8 +185,6 @@
                 <div style="height: 50px;"></div>
                 <asp:Button ID="Button8" CssClass="btn btn-block btn-success" runat="server" Text="Submit" OnClick="SubmitResults_Click" />
             </div>--%>
-            
-        
                         </div>
                     </div>
                 </div>
