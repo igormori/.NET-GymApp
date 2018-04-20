@@ -36,11 +36,12 @@ namespace gymApplication
 
                     }
                 }
+                else
+                {
+                    lblreset.Text = "Password not matched, Try again";
+                }
             }
-            else
-            {
-                lblreset.Text = "Password not matched, Try again";
-            }
+           
 
         }
 
