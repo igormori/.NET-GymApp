@@ -11,10 +11,7 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["leg1"] = "leg1";
-            Session["leg1"] = "leg2";
-            Session["back1"] = "back1";
-            Session["back2"] = "back2";
+           
 
 
         }

@@ -15,31 +15,54 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand com;
-            string cmd;
+
             using (SqlConnection connection = new SqlConnection(hashed.constring))
             {
 
                 if (Session["user"] != null)
                 {
+                    SqlCommand cmd = connection.CreateCommand();
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = "SELECT * FROM Workouts_table ";
                     connection.Open();
-                    //query
-
-                    cmd = "SELECT * FROM Workouts_table";
                     DataTable dt = new DataTable();
-                    com = new SqlCommand(cmd, connection);
-                    SqlDataReader reader = com.ExecuteReader();
-
+                    SqlDataAdapter sqladapter = new SqlDataAdapter(cmd);
+                    sqladapter.Fill(dt);
+                    //query
+                    string r = dt.Rows[0]["WorkoutName"].ToString();
+                    
 
                     if (Request.QueryString["selected"].ToString() == "begining")
                     {
-                        reader.Read();
-                        name.Text = Request.QueryString["selected"].ToString();
-                        leg1.Text = reader["WorkoutName"].ToString();
-                        leg1d.Text = reader["Description"].ToString();
-                        leg2.Text = reader["WorkoutName"].ToString();
-                        leg2d.Text = reader["Description"].ToString();
+                        string s1,s2, s3,d1,d2,d3;
+                        s2=s3=d1=d2=d3=s1 = "";
+                        
+                        for ( int i=0; i< 4; i++)
+                        {
+                            if(i==0)
+                            {
+                                s1= dt.Rows[i]["WorkoutName"].ToString();
+                                d1= dt.Rows[i]["Description"].ToString();
+                            }
+                            if (i == 1)
+                            {
+                                s2 = dt.Rows[i]["WorkoutName"].ToString();
+                                d2 = dt.Rows[i]["Description"].ToString();
+                            }
+                            if (i == 3)
+                            {
+                                s3 = dt.Rows[i]["WorkoutName"].ToString();
+                                d3 = dt.Rows[i]["Description"].ToString();
+                            }
+                            leg1.Text = s1;
+                            leg1d.Text = d1;
+                            leg2.Text = s2;
+                            leg2d.Text = d2;
 
+                        }
+
+
+                        
 
                     }
                 }
