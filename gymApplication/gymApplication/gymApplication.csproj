@@ -112,10 +112,12 @@
     <Content Include="Contact.aspx" />
     <Content Include="loginConfirmation.aspx" />
     <Content Include="SignupConfirmation.aspx" />
-    <Content Include="ExercisePage.aspx" />
+    <Content Include="ExercisePage.aspx">
+      <BrowseToURL>~/ExercisePage.aspx</BrowseToURL>
+    </Content>
     <Content Include="GraphMasterWebPage.Master" />
-    <Content Include="forgotpassword.aspx" />
-    <Content Include="ResetPage.aspx" />
+    <Content Include="Exercises.aspx" />
+    <Content Include="GraphPage.aspx" />
     <Content Include="workouts.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
@@ -285,19 +287,19 @@
     <Compile Include="ExercisePage.aspx.designer.cs">
       <DependentUpon>ExercisePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="forgotpassword.aspx.cs">
-      <DependentUpon>forgotpassword.aspx</DependentUpon>
+    <Compile Include="Exercises.aspx.cs">
+      <DependentUpon>Exercises.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="forgotpassword.aspx.designer.cs">
-      <DependentUpon>forgotpassword.aspx</DependentUpon>
+    <Compile Include="Exercises.aspx.designer.cs">
+      <DependentUpon>Exercises.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ResetPage.aspx.cs">
-      <DependentUpon>ResetPage.aspx</DependentUpon>
+    <Compile Include="GraphPage.aspx.cs">
+      <DependentUpon>GraphPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ResetPage.aspx.designer.cs">
-      <DependentUpon>ResetPage.aspx</DependentUpon>
+    <Compile Include="GraphPage.aspx.designer.cs">
+      <DependentUpon>GraphPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="workouts.aspx.cs">
       <DependentUpon>workouts.aspx</DependentUpon>

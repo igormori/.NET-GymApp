@@ -4,86 +4,51 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container mx-auto">
-        <div class="row mt-3 col-10">
+        <div class="row mt-3 col-10">   
             <div class="col">
-                <ul class="nav nav-tabs  p-2">
-                    <li class="active"><a data-toggle="tab" class="nav-link" href="#ABS">ABS</a></li>
-                    <li><a data-toggle="tab" class="nav-link" href="#LEGS">LEGS</a></li>
-                    <li><a data-toggle="tab" class="nav-link" href="#BICEPS">BICEPS</a></li>
-                    <li><a data-toggle="tab" class="nav-link" href="#SHOULDERS">SHOULDERS</a></li>
-                    <li><a data-toggle="tab" class="nav-link" href="#BACK">BACK</a></li>
-                </ul>
+               <h2> Select your pre-defined workout for your week training</h2>
             </div>
 
         </div>
         <div class="row text-center mt-2">
 
-            <div class="col-10 ">
+            <div class="col-12 ">
                 <div class="tab-content ">
-
-                    <div id="ABS" class="tab-pane  active">
-                        <div class="row">
-                            <div class="col">
-                                <h3>ABS</h3>
-                                <img src="pictures/Abs/crunch3.gif" />
-                            </div>
-                            <div class="col">
-                                <h3>links for selecting workouts</h3>
-                            </div>
-
-                        </div>
-
+                    <div class="jumbotron" style="background: url(../pictures/gym.jpg) no-repeat center center;color:white">
+                      <h1 class="display-20">Beginer 1</h1>
+                      <p class="lead">This is a training for beginer in the gym world!</p>
+                      <hr class="my-2">
+                      <p>This Training will make your body ready to have a fitness life. We are going to train you basic workout exercises, then lets get ready! Click in the buttom for more information </p>
+                      <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=begining" role="button">Description</a>
+                      </p>
                     </div>
-                    <div id="LEGS" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col">
-                                <h3>LEGS</h3>
-                                <img src="pictures/Abs/crunch2.gif" />
-                            </div>
-                            <div class="col">
-                                <h3>links for selecting workouts</h3>
-                            </div>
+                </div>
+            </div>
 
-                        </div>
-
+            <div class="col-12 ">
+                <div class="tab-content ">
+                    <div class="jumbotron" style="background: url(../pictures/home.jpg) no-repeat center center;color:white">
+                      <h1 class="display-20">Intermediate 1</h1>
+                      <p class="lead">This is a Intermediate Training for people who needs a little challenge!</p>
+                      <hr class="my-2">
+                      <p>This Training will make your body ready to have a fitness life. We are going to train you basic workout exercises, then lets get ready! Click in the buttom for more information </p>
+                      <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=intermediate" role="button">Description</a>
+                      </p>
                     </div>
-                    <div id="BICEPS" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col">
-                                <h3>BICEPS</h3>
-                                <p>picture</p>
-                            </div>
-                            <div class="col">
-                                <h3>links for selecting workouts</h3>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div id="SHOULDERS" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col">
-                                <h3>SHOULDERS</h3>
-                                <p>picture</p>
-                            </div>
-                            <div class="col">
-                                <h3>links for selecting workouts</h3>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div id="BACK" class="tab-pane fade in active">
-                        <div class="row">
-                            <div class="col">
-                                <h3>BACK</h3>
-                                <p>picture</p>
-                            </div>
-                            <div class="col">
-                                <h3>links for selecting workouts</h3>
-                            </div>
-
-                        </div>
+                </div>
+            </div>
+            <div class="col-12 ">
+                <div class="tab-content ">
+                    <div class="jumbotron" style="background: url(../pictures/girl_boxer.jpeg) no-repeat center center;color:white">
+                      <h1 class="display-20">Advanced 1</h1>
+                      <p class="lead">This is a training for beginer in the gym world!</p>
+                      <hr class="my-2">
+                      <p>This Training will make your body ready to have a fitness life. We are going to train you basic workout exercises, then lets get ready! Click in the buttom for more information </p>
+                      <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=advanced" role="button">Description</a>
+                      </p>
                     </div>
                 </div>
             </div>
