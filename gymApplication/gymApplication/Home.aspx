@@ -3,6 +3,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <div class="container-fuild" style="overflow-x: hidden;">
         <div style="height: 30px;"></div>
         <div class="row">
@@ -44,7 +45,7 @@
                         <div class="row justify-content-center mt-1">
                             <!--welcome-->
                             <div class="col-sm-12 col-md-12">
-                                <h1 class="display-5 text-center text-primary">Workouts</h1>
+                                <h1 class="display-5 text-center text-primary">Weekly review</h1>
                             </div>
                         </div>
                         <div class="row justify-content-md-center mt-2">
@@ -67,16 +68,120 @@
                         <div class="row justify-content-center">
 
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RegistrationConnectionString %>" SelectCommand="SELECT [ExpectedReps], [ActualReps] FROM [UserWorkOuts_Table]"></asp:SqlDataSource>
-                            <p id="demo" class="workout">9</p>
-                            <asp:Label ID="req1" runat="server" Text="Label">8</asp:Label>
-                            <asp:Label ID="comp1" runat="server" Text="Label">9</asp:Label>
+                         
 
 
-                            <!--graph-->
-                            <div class="col-md-10">
-                                <canvas class="border-success" id="myChart" width="400" height="200"></canvas>
-                                
+                           
+        <div class="row">
+           <div class="col-sm-12">
+                        <div class="row justify-content-md-center">
+                           
+                            <div style ="color:white">
+                            <asp:Label ID="results" runat="server"></asp:Label>
                             </div>
+                        </div>
+                    </div>
+            <!--outter div for graph and checkboxes-->
+            <div class="row">
+                <div class="col-4">
+                     <div class="">
+                                <h5>Confirm completion</h5>
+                            </div>
+                            <div class="">
+                                <asp:CheckBox ID="CheckBox1" runat="server" />
+                            </div>
+                            <div class="">
+                                <asp:CheckBox ID="CheckBox2" runat="server" />
+                            </div>
+                            <div class="">
+                                <asp:CheckBox ID="CheckBox3" runat="server" />
+                            </div>
+                            <div class="">
+                                <asp:CheckBox ID="CheckBox4" runat="server" />
+                            </div>
+                            <div class="">
+                                <asp:CheckBox ID="CheckBox5" runat="server" />
+                            </div>
+                            <div class="">
+                               <label class="">S</label><asp:CheckBox ID="CheckBox6" runat="server" />
+                            </div>
+                            <div class="">
+                                <label class="">S</label><asp:CheckBox ID="CheckBox7" runat="server" />
+                            </div>
+                    <asp:Button ID="Button8" CssClass="btn btn-block btn-success" runat="server" Text="Submit" OnClick="SubmitResults_Click" />
+           
+                </div>
+                <div class ="col-8">
+                        <canvas id="myChart"  class="w-100" " height: auto"></canvas>
+                
+                
+                </div>
+            </div>
+                    
+                    <%--<div class="col-sm-12">
+                        <div class="row justify-content-md-center">
+                            <div class="col-sm-1">
+                                <h1 class="display-3">S</h1>
+                            </div>
+                            <div class="col-sm-1">
+                                <h1 class="display-3">M</h1>
+                            </div>
+                            <div class="col-sm-1">
+                                <h1 class="display-3">T</h1>
+                            </div>
+                            <div class="col-sm-1">
+                                <h1 class="display-3">W</h1>
+                            </div>
+                            <div class="col-sm-1">
+                                <h1 class="display-3">T</h1>
+                            </div>
+                            <div class="col-sm-1">
+                                <h1 class="display-3">F</h1>
+                            </div>
+                            <div class="col-sm-1">
+                                <h1 class="display-3">S</h1>
+                            </div>
+                        </div>
+                    </div>--%>
+                    
+       <%--             <div class="col-sm-12">
+                        <div class="row justify-content-md-center">
+                             <div class="col-sm-1">
+                                <h5>Confirm completion</h5>
+                            </div>
+                            <div class="col-sm-1">
+                                <asp:CheckBox ID="CheckBox1" runat="server" />
+                            </div>
+                            <div class="col-sm-1">
+                                <asp:CheckBox ID="CheckBox2" runat="server" />
+                            </div>
+                            <div class="col-sm-1">
+                                <asp:CheckBox ID="CheckBox3" runat="server" />
+                            </div>
+                            <div class="col-sm-1">
+                                <asp:CheckBox ID="CheckBox4" runat="server" />
+                            </div>
+                            <div class="col-sm-1">
+                                <asp:CheckBox ID="CheckBox5" runat="server" />
+                            </div>
+                            <div class="col-sm-1">
+                                <asp:CheckBox ID="CheckBox6" runat="server" />
+                            </div>
+                            <div class="col-sm-1">
+                                <asp:CheckBox ID="CheckBox7" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+               
+            </div>--%>
+      <%--      <div class="col-sm-12">
+                <div style="height: 50px;"></div>
+                <canvas id="myChart" style="width: 312px; height: 130px"></canvas>
+                <div style="height: 50px;"></div>
+                <asp:Button ID="Button8" CssClass="btn btn-block btn-success" runat="server" Text="Submit" OnClick="SubmitResults_Click" />
+            </div>--%>
+            
+        
                         </div>
                     </div>
                 </div>
