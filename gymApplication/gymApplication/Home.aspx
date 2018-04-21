@@ -39,7 +39,7 @@
                                 <h1 class="display-5 text-center text-primary font-weight-bold">TimeLine</h1>
                                 <asp:TextBox CssClass="form-control border-primary text-muted" ID="TextBox1" rows="5"  runat="server">What's your plan for today ?</asp:TextBox>
 
-                                <asp:Button class="btn btn-success float-right mt-4" ID="submit" runat="server" Text="Button" OnClick="submit_Click" />
+                                <asp:Button class="btn btn-danger float-right mt-4" ID="submit" runat="server" Text="Button" OnClick="submit_Click" />
                                 
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button1" runat="server" Text="Sunday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button2" runat="server" Text="Monday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button3" runat="server" Text="Tuesday" />
-                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button4" runat="server" Text="Wednesday" BorderStyle="Ridge" />
+                                    <asp:Button CssClass="btn btn-outline-primary" ID="Button4" runat="server" Text="Wednesday" Width="105px" BorderStyle="Ridge" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button5" runat="server" Text="Thursday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button6" runat="server" Text="Friday" />
                                     <asp:Button CssClass="btn btn-outline-primary" ID="Button7" runat="server" Text="Saturday" />

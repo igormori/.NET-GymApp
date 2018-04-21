@@ -16,9 +16,9 @@
        
             <h1><asp:Label CssClass="m-2" ID="name" runat="server" Text="Label"></asp:Label></h1>
             <asp:Label ID="bio" runat="server" Text="Label"></asp:Label></br>
-            <asp:Button CssClass="btn btn-lg btn-primary m-2 " ID="Button3" runat="server" Text="Edit your Profile" Width="300px" PostBackUrl="~/EditPage.aspx"/></br>
+            <asp:Button CssClass="btn btn-lg btn-danger m-2 " ID="Button3" runat="server" Text="Edit your Profile" Width="300px" PostBackUrl="~/EditPage.aspx"/></br>
             <asp:Button CssClass="btn btn-lg btn-primary m-2" ID="Button1" runat="server" Text="Set your Training" Width="200px" PostBackUrl="~/ExercisePage.aspx" />
-            <asp:Button CssClass="btn btn-lg btn-danger m-2 " ID="Button2" runat="server" Text="Check your Weekly training" Width="300px" OnClick="Button2_Click" />
+            <asp:Button CssClass="btn btn-lg btn-primary m-2 " ID="Button2" runat="server" Text="Check your training" Width="200px" OnClick="Button2_Click" />
             
       
             <i class="fas fa-chart-line"></i>
