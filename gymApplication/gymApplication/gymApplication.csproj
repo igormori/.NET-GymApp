@@ -120,6 +120,7 @@
     <Content Include="GraphPage.aspx" />
     <Content Include="ResetPage.aspx" />
     <Content Include="forgotpassword.aspx" />
+    <Content Include="EditPage.aspx" />
     <Content Include="workouts.aspx" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
@@ -317,6 +318,13 @@
     <Compile Include="forgotpassword.aspx.designer.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditPage.aspx.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditPage.aspx.designer.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="workouts.aspx.cs">
       <DependentUpon>workouts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -330,6 +338,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pictures\profile\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

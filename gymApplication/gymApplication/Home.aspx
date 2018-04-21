@@ -15,21 +15,18 @@
                         <!--the card is going here-->
                         <div class="card-group border-primary">
                             <div class="card">
-                                <img src="pictures/profile.jpg" class="img-fluid" />
-                                <div class="card-body">
-                                    <h5 class="card-title display-4">Igor</h5>
-                                    <p class="card-text">
-                                        This is your personal homepage please feel free to use the graphs and calendar provided to track your
-                                progress!
-                                    </p>
+                                <asp:Image ID="Image1" runat="server" CssClass="img-fluid fa-circle"  />
+                                <div class="card-body text-center">
+                                     <h1><asp:Label CssClass="" ID="name" runat="server" Text="Label"></asp:Label></h1>
+                                    <asp:Label ID="bio" runat="server" Text="Label"></asp:Label>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Your Age</li>
-                                    <li class="list-group-item">Your date of birth</li>
-                                    <li class="list-group-item">Your Gym name and Location</li>
+                                    <li class="list-group-item"><asp:Label ID="age" runat="server" Text="Label"></asp:Label></li>
+                                    <li class="list-group-item"><asp:Label ID="heigth" runat="server" Text="Label"></asp:Label></li>
+                                    
                                 </ul>
-                                <div class="card-body">
-                                    <a href="profile.aspx" class="card-link">Profile</a>
+                                <div class="card-body ">
+                                    <asp:Button CssClass="btn btn-lg btn-primary m-2 " ID="Button9" runat="server" Text="Check your training" Width="250px" PostBackUrl="~/Profile.aspx" />
                                 </div>
                             </div>
                         </div>
@@ -40,8 +37,10 @@
                             <!--welcome-->
                             <div class="col-sm-12 col-md-12 col-lg-8 p-2">
                                 <h1 class="display-5 text-center text-primary font-weight-bold">TimeLine</h1>
-                                <textarea class="form-control border-primary text-muted" rows="5" placeholder="What's your plan for today ?"></textarea>
-                                <button type="submit" class="btn btn-success float-right mt-4">Update</button>
+                                <asp:TextBox CssClass="form-control border-primary text-muted" ID="TextBox1" rows="5"  runat="server">What's your plan for today ?</asp:TextBox>
+
+                                <asp:Button class="btn btn-success float-right mt-4" ID="submit" runat="server" Text="Button" OnClick="submit_Click" />
+                                
                             </div>
                         </div>
                         <div class="row justify-content-center mt-1">

@@ -5,8 +5,8 @@
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-fuild" style="overflow-x: hidden;">
         <div class="row justify-content-md-center">
-            <div class="col-12 " style="height: 350px">
-                <img src="pictures/landinghome.jpg" class="img-fluid" alt="Responsive image" style="height: 550px; width: 3000px;">
+            <div class="col-12 text-center " style="height: 450px;background:url('pictures/landinghome.jpg') no-repeat; color:white">
+                           
             </div>
         </div>
         <div class="row justify-content-md-center" style="position: relative;">

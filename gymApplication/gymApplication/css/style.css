@@ -13,7 +13,12 @@
     border-radius: 5px;
 }
 
-
+#exercise {
+    text-decoration: none
+}
+a {
+    text-decoration: none
+}
 
 .box1 {
     background: url(../pictures/note.jpg) center center;

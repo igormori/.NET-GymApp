@@ -38,7 +38,7 @@ namespace gymApplication
                     reader.Read();
                     name.Text = reader["UserName"].ToString();
                     bio.Text = reader["bio"].ToString();
-                    Image1.ImageUrl = "pictures/"+reader["picture_url"].ToString();
+                    Image1.ImageUrl = "pictures/profile/"+reader["picture_url"].ToString();
                     reader.Close();
                    
                    
