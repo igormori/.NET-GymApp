@@ -75,7 +75,7 @@
         </a>
       <a class=" text-primary font-weight-bold" href="Home.aspx">Home</a>
       <a class="text-primary font-weight-bold" href="profile.aspx">Profile</a>
-      <a class="text-primary font-weight-bold" href="Exercises.aspx">Exercises</a>
+      <a class="text-primary font-weight-bold" href="ExercisePage.aspx?">Exercises</a>
        <a class="text-primary font-weight-bold" href="login.aspx">SignOut</a>
 
   </nav>

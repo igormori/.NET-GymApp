@@ -80,6 +80,7 @@ namespace gymApplication
                             Response.Cookies["userpass"].Expires = DateTime.Now.AddDays(-1);
                         }
                         Session["user"] = Email.Text;
+                       
                         Response.Redirect("Home.aspx?");
                     }
 
