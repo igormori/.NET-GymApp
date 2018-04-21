@@ -18,18 +18,18 @@
 
                 <label for="formGroupExampleInput"></label>
 
-                <asp:TextBox ID="FName" runat="server" class="form-control" placeholder="First Name"></asp:TextBox>
+                <asp:TextBox ID="txtFName" runat="server" class="form-control" placeholder="First Name"></asp:TextBox>
                 <div class="row justify-content-center" style="color: #FF0000">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FName" ErrorMessage="First Name Required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtFName" ErrorMessage="First Name Required"></asp:RequiredFieldValidator>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="form-group">
                 <label for="formGroupExampleInput"></label>
-                <asp:TextBox class="form-control" ID="LName" runat="server" placeholder="Last Name"></asp:TextBox>
+                <asp:TextBox class="form-control" ID="txtLName" runat="server" placeholder="Last Name"></asp:TextBox>
                 <div class="row justify-content-center" style="color: #FF0000">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="LName" ErrorMessage="Last Name Required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtLName" ErrorMessage="Last Name Required"></asp:RequiredFieldValidator>
                 </div>
             </div>
 
@@ -40,16 +40,16 @@
             <div class="form-group">
                 <label for="formGroupExampleInput"></label>
 
-                <asp:TextBox ID="Phone" runat="server" class="form-control" placeholder="Phone Number"></asp:TextBox>
+                <asp:TextBox ID="txtPhone" runat="server" class="form-control" placeholder="Phone Number"></asp:TextBox>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="form-group">
                 <label for="formGroupExampleInput"></label>
 
-                <asp:TextBox ID="Email" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
+                <asp:TextBox ID="txtEmail" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
                 <div class="row justify-content-center" style="color: #FF0000">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Email" ErrorMessage="Email Required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email Required"></asp:RequiredFieldValidator>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class="col-sm-6">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="20" placeholder="Message"></textarea>
+                <asp:TextBox Height="100px" ID="txtMessage" runat="server">Message</asp:TextBox>  
             </div>
         </div>
     </div>

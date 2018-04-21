@@ -16,6 +16,10 @@ namespace gymApplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["user"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
 
         }
 
@@ -24,8 +28,8 @@ namespace gymApplication
             using (SqlConnection connection = new SqlConnection(hashed.constring))
             {
 
-                int ageint = Convert.ToInt32(age.Text);
-                int heightint = Convert.ToInt32(height.Text);
+                int ageint = Convert.ToInt32(txtage.Text);
+                int heightint = Convert.ToInt32(txtheight.Text);
 
                
 
@@ -46,10 +50,11 @@ namespace gymApplication
                 
                 connection.Open();
                 
-                string s = "UPDATE Users set bio = '" + bio.Text + "', UserAge ='" + ageint + "', UserHeight ='" + heightint + "', picture_url ='" + pic + "' WHERE UserEmail ='" + Session["user"] + "'";
+                string s = "UPDATE Users set bio = '" + txtbio.Text + "', UserAge ='" + ageint + "', UserHeight ='" + heightint + "', picture_url ='" + pic + "' WHERE UserEmail ='" + Session["user"] + "'";
                 SqlCommand command = new SqlCommand(s, connection);
-                    command.ExecuteNonQuery();
-                }
+                command.ExecuteNonQuery();
+                Response.Redirect("Profile.aspx");
+            }
                
 
             }

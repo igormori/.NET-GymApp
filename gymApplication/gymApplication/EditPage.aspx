@@ -8,21 +8,21 @@
             <div class="form-group row">
                 
                 <div class="col-lg-4 col-md-5 col-sm-1 mx-auto ">
-                    <asp:TextBox ID="bio" runat="server" class="form-control " aria-describedby="emailHelp" placeholder="Enter your brief bio" Height="100" ></asp:TextBox>
+                    <asp:TextBox ID="txtbio" runat="server" class="form-control " aria-describedby="emailHelp" placeholder="Enter your brief bio" Height="100" ></asp:TextBox>
                 </div>
             </div>
 
             <div class="form-group row">
                 
                 <div class="col-lg-4 col-md-5 col-sm-1 mx-auto ">
-                    <asp:TextBox ID="age" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Enter your age"></asp:TextBox>
+                    <asp:TextBox ID="txtage" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Enter your age"></asp:TextBox>
                 </div>
             </div>
            
             <div class="form-group row ">
                 
                 <div class="col-lg-4 col-md-5 col-sm-1 mx-auto">
-                    <asp:TextBox ID="height" type ="password" runat="server" class="form-control" placeholder="Enter your height"></asp:TextBox> 
+                    <asp:TextBox ID="txtheight" type ="password" runat="server" class="form-control" placeholder="Enter your height"></asp:TextBox> 
                 </div>
             </div>
             <div class="form-group row">

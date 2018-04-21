@@ -13,31 +13,31 @@ namespace gymApplication {
     public partial class WebForm13 {
         
         /// <summary>
-        /// bio control.
+        /// txtbio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox bio;
+        protected global::System.Web.UI.WebControls.TextBox txtbio;
         
         /// <summary>
-        /// age control.
+        /// txtage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age;
+        protected global::System.Web.UI.WebControls.TextBox txtage;
         
         /// <summary>
-        /// height control.
+        /// txtheight control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox height;
+        protected global::System.Web.UI.WebControls.TextBox txtheight;
         
         /// <summary>
         /// FileUpload1 control.
