@@ -22,7 +22,7 @@
             <div class="form-group row ">
                 
                 <div class="col-lg-4 col-md-5 col-sm-1 mx-auto">
-                    <asp:TextBox ID="txtheight" type ="password" runat="server" class="form-control" placeholder="Enter your height"></asp:TextBox> 
+                    <asp:TextBox ID="txtweight" type ="password" runat="server" class="form-control" placeholder="Enter your height"></asp:TextBox> 
                 </div>
             </div>
             <div class="form-group row">

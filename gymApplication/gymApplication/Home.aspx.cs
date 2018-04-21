@@ -39,7 +39,7 @@ namespace gymApplication
                     bio.Text = reader["bio"].ToString();
                     Image1.ImageUrl = "pictures/profile/" + reader["picture_url"].ToString();
                     age.Text = "Age: " + reader["UserAge"].ToString();
-                    heigth.Text = "Height: " + reader["UserHeight"].ToString() + "KG";
+                    heigth.Text = "Weight: " + reader["UserHeight"].ToString() + "KG";
                     reader.Close();
                 }
                 else
