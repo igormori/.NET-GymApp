@@ -39,11 +39,11 @@ namespace gymApplication
                     bio.Text = reader["bio"].ToString();
                     Image1.ImageUrl = "pictures/profile/" + reader["picture_url"].ToString();
                     age.Text = "Age: " + reader["UserAge"].ToString();
-<<<<<<< HEAD
+
                     heigth.Text = "Weight: " + reader["UserWeight"].ToString() + "KG";
-=======
+
                     heigth.Text = "Height: " + reader["UserHeight"].ToString() + "KG";
->>>>>>> parent of 91c405a... DataBase settings and Weight
+
                     reader.Close();
                 }
                 else
