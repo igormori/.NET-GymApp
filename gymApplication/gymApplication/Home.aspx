@@ -15,7 +15,7 @@
                         <!--the card is going here-->
                         <div class="card-group border-primary">
                             <div class="card">
-                                <asp:Image ID="Image1" runat="server" CssClass="img-fluid fa-circle"  />
+                                <asp:Image ID="Image1" runat="server" CssClass="img-fluid fa-circle"   />
                                 <div class="card-body text-center">
                                      <h1><asp:Label CssClass="" ID="name" runat="server" Text="Label"></asp:Label></h1>
                                     <asp:Label ID="bio" runat="server" Text="Label"></asp:Label>
@@ -121,6 +121,7 @@
                         <canvas id="myChart"  class="w-100" " height: auto"></canvas>
                  </div>
             </div>
+                                 </div>
                     
                     <%--<div class="col-sm-12">
                         <div class="row justify-content-md-center">

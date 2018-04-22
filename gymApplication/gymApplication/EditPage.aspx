@@ -8,21 +8,24 @@
             <div class="form-group row">
                 
                 <div class="col-lg-4 col-md-5 col-sm-1 mx-auto ">
-                    <asp:TextBox ID="txtbio" runat="server" class="form-control " aria-describedby="emailHelp" placeholder="Enter your brief bio" Height="100" ></asp:TextBox>
+                    <asp:TextBox ID="txtbio" runat="server" class="form-control " placeholder="Enter your brief bio" Height="100" ></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Bio cannot be blank" ControlToValidate="txtbio"></asp:RequiredFieldValidator>
                 </div>
             </div>
 
             <div class="form-group row">
                 
                 <div class="col-lg-4 col-md-5 col-sm-1 mx-auto ">
-                    <asp:TextBox ID="txtage" runat="server" class="form-control" aria-describedby="emailHelp" placeholder="Enter your age"></asp:TextBox>
+                    <asp:TextBox ID="txtage" runat="server" class="form-control"  placeholder="Enter your age"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Age cannot be blank" ControlToValidate="txtage"></asp:RequiredFieldValidator>
                 </div>
             </div>
            
             <div class="form-group row ">
                 
                 <div class="col-lg-4 col-md-5 col-sm-1 mx-auto">
-                    <asp:TextBox ID="txtheight" type ="password" runat="server" class="form-control" placeholder="Enter your height"></asp:TextBox> 
+                    <asp:TextBox ID="txtweight" runat="server" class="form-control" placeholder="Enter your height"></asp:TextBox> 
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Weigth cannot be blank" ControlToValidate="txtweight"></asp:RequiredFieldValidator>
                 </div>
             </div>
             <div class="form-group row">
@@ -34,7 +37,7 @@
             </div>
             <div class="col-lg-4 col-md-5 col-sm-1 mx-auto text-center">
                 
-                <asp:Button class="btn btn-primary  text-center" ID="Button1" runat="server" Text="Sign Up" Width="200px" OnClick="Button1_Click"  />
+                <asp:Button class="btn btn-primary  text-center" ID="Button1" runat="server" Text="Update" Width="200px" OnClick="Button1_Click"  />
             </div>
             
 

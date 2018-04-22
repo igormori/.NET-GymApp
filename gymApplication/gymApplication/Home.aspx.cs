@@ -24,6 +24,7 @@ namespace gymApplication
 
                 if (Session["user"] != null)
                 {
+                   
 
 
                     connection.Open();
@@ -38,11 +39,11 @@ namespace gymApplication
                     name.Text = reader["UserName"].ToString();
                     bio.Text = reader["bio"].ToString();
                     Image1.ImageUrl = "pictures/profile/" + reader["picture_url"].ToString();
+                    
                     age.Text = "Age: " + reader["UserAge"].ToString();
 
                     heigth.Text = "Weight: " + reader["UserWeight"].ToString() + "KG";
 
-                    heigth.Text = "Height: " + reader["UserHeight"].ToString() + "KG";
 
                     reader.Close();
                 }

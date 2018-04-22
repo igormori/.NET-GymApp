@@ -30,7 +30,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary " style="border-color: #C4DDE0; border-width: 5px;">
         <a id="Brand" runat="server" class="navbar-brand" href="Default.aspx">
-            <img src="pictures/logo.png" width="80px" length="80px">
+            <img src="pictures/logo.png" width="80" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
                 <li class="nav-item pl-3">
                    <a class="text-primary font-weight-bold" href="login.aspx?logout=destroy">Log out<span class="ml-2 fa fa-sign-in"></span></a>
                 </li>
-                <%} %>
+              
             </ul>
 
 
@@ -81,15 +81,15 @@
                         <div class="row">
                             <div class="col float-left">
                                 <b>Igor Mori : 101045762</b>
-                                </br>
+                                <br/>
                         <b>Sherwayne Walrond 100612847</b>
 
                             </div>
 
                             <div class="col float-right">
                                 <b>Dindyal Mursingh : 101045762</b>
-                                </br>
-                        <b>Farhad Hossain : 101056010</b>
+                                <br/>
+                                <b>Farhad Hossain : 101056010</b>
                             </div>
                             <div class="col float-right">
                                 <b>Fortune Creig Phiri : 101087294</b>
@@ -121,23 +121,13 @@
                             </div>
                         </div>
 
-                        <%-- </br>
-                        <b>Igor Mori | 101045762</b>
-                        </br>
-                        <b>Sherwayne Walrond | 100612847</b>
-                        </br>
-                        <b>Fortune Creig Phiri | 101087294</b>
-                        </br>
-                        <b>Dindyal Mursingh | 101083659</b>
-                        </br>
-                        <b>Farhad Hossain | 101056010</b>--%>
+                      
                     </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
+         
 
-                    <!--Grid column-->
+               
                 </div>
-                <!--Grid row-->
+                
             </div>
         </div>
     </footer>
