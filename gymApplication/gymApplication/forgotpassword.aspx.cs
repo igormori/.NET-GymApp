@@ -37,7 +37,7 @@ namespace gymApplication
                     else
                     {
                         Session["resetemail"] = txtEmail.Text;
-                        Response.Redirect("ResetPage.aspx?user=");
+                        Response.Redirect("ResetPage.aspx?");
                     }
                 }
             }

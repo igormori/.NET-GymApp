@@ -58,30 +58,34 @@ namespace gymApplication
                     sqlad.Fill(dt);
                     //pass Asdf1234! for dfdff and Farhad123! for another
 
-                    //hasing and salting
 
-                    string salt = dt.Rows[0]["saltpassword"].ToString();
-                    string hasandsalted = hashed.SHA256Hash(Password.Text, salt);
 
-                    if (dt.Rows.Count != 0 && hasandsalted == dt.Rows[0]["UserPassword"].ToString())
+                    if (dt.Rows.Count != 0)
                     {
-                        if (remembercheck.Checked)
+                        //hasing and salting
+                        string salt = dt.Rows[0]["saltpassword"].ToString();
+                        string hasandsalted = hashed.SHA256Hash(Password.Text, salt);
+                        if (hasandsalted == dt.Rows[0]["UserPassword"].ToString())
                         {
-                            Response.Cookies["username"].Value = Email.Text;
-                            Response.Cookies["userpass"].Value = Password.Text;
-                            Response.Cookies["username"].Expires = DateTime.Now.AddHours(24);
-                            Response.Cookies["userpass"].Expires = DateTime.Now.AddHours(24);
+                            if (remembercheck.Checked)
+                            {
+                                Response.Cookies["username"].Value = Email.Text;
+                                Response.Cookies["userpass"].Value = Password.Text;
+                                Response.Cookies["username"].Expires = DateTime.Now.AddHours(24);
+                                Response.Cookies["userpass"].Expires = DateTime.Now.AddHours(24);
 
 
+                            }
+                            else
+                            {
+                                Response.Cookies["username"].Expires = DateTime.Now.AddDays(-1);
+                                Response.Cookies["userpass"].Expires = DateTime.Now.AddDays(-1);
+                            }
+                            Session["user"] = Email.Text;
+
+                            Response.Redirect("Home.aspx?");
                         }
-                        else
-                        {
-                            Response.Cookies["username"].Expires = DateTime.Now.AddDays(-1);
-                            Response.Cookies["userpass"].Expires = DateTime.Now.AddDays(-1);
-                        }
-                        Session["user"] = Email.Text;
-                       
-                        Response.Redirect("Home.aspx?");
+
                     }
 
                     else

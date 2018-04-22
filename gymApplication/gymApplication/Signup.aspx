@@ -10,7 +10,7 @@
         <div class="col-sm-12 col-md-6 col-lg-8">
             <div class="row">
                 <div class="col-12">
-                    //done
+                    
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
