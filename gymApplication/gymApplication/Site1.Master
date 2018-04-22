@@ -42,19 +42,13 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active p-3">
-                    <a class=" text-primary font-weight-bold " href="Home.aspx">Main</a>
-                </li>
-                <li class="nav-item p-3">
-                    <a class="text-primary font-weight-bold" href="Profile.aspx">Profile <span class="ml-2 fa fa-user-circle"></span></a>
-                </li>
-            </ul>
+         
 
             <ul class="navbar-nav ml-auto ">
                 <%if (Session["user"] != null)
                     {%>
                 <li class="nav-item ">
+                    
                     <a class="text-primary font-weight-bold" href="login.aspx?logout=destroy">Log out<span class="ml-2 fa fa-sign-in"></span></a>
 
                    
@@ -64,8 +58,8 @@
                 else
                 {  %>
                 <li class="nav-item ">
-
-                    <a class="text-primary font-weight-bold" href="login.aspx">Sign in<span class="ml-2 fa fa-sign-in"></span></a>
+                    <span class="small text-primary">already have an account?</span>
+                    <a class="text-primary font-weight-bold mr-3" href="login.aspx">Sign in<span class="ml-2 fa fa-sign-in"></span></a>
                 </li>
                
                 <li class="nav-item pl-3">
@@ -78,7 +72,9 @@
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </nav>
-    <div class="p-4 bg-dark"></div>
+
+
+   <div class="p-3 bg-white"></div>
     <!--------- This is where all content goes-------->
 
 

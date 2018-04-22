@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ExercisePage.aspx.cs" Inherits="gymApplication.WebForm9" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GraphMasterWebPage.Master" AutoEventWireup="true" CodeBehind="ExercisePage.aspx.cs" Inherits="gymApplication.WebForm9" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -20,7 +20,7 @@
                       <hr class="my-2">
                       <p>This Training will make your body ready to have a fitness life. We are going to train you basic workout exercises, then lets get ready! Click in the buttom for more information </p>
                       <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=begining" role="button">Description</a>
+                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=beginer1" role="button">Description</a>
                       </p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                       <hr class="my-2">
                       <p>This Training will make your body ready to have a fitness life. We are going to train you basic workout exercises, then lets get ready! Click in the buttom for more information </p>
                       <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=intermediate" role="button">Description</a>
+                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=intermediate1" role="button">Description</a>
                       </p>
                     </div>
                 </div>
@@ -47,14 +47,12 @@
                       <hr class="my-2">
                       <p>This Training will make your body ready to have a fitness life. We are going to train you basic workout exercises, then lets get ready! Click in the buttom for more information </p>
                       <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=advanced" role="button">Description</a>
+                        <a class="btn btn-primary btn-lg" href="Exercises.aspx?selected=advanced1" role="button">Description</a>
                       </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mb-3 align-contents-center">
-            <button class="btn btn-success align-center" type="submit">LOG WORKOUT</button>
-        </div>
+       
         </div>
 </asp:Content>
