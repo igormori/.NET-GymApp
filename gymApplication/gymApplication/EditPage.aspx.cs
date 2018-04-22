@@ -29,7 +29,7 @@ namespace gymApplication
             {
 
                 int ageint = Convert.ToInt32(txtage.Text);
-                int weightint = Convert.ToInt32(txtweight.Text);
+                int heightint = Convert.ToInt32(txtheight.Text);
 
                
 
@@ -50,7 +50,7 @@ namespace gymApplication
                 
                 connection.Open();
                 
-                string s = "UPDATE Users set bio = '" + txtbio.Text + "', UserAge ='" + ageint + "', UserWeight='" + weightint + "', picture_url ='" + pic + "' WHERE UserEmail ='" + Session["user"] + "'";
+                string s = "UPDATE Users set bio = '" + txtbio.Text + "', UserAge ='" + ageint + "', UserHeight ='" + heightint + "', picture_url ='" + pic + "' WHERE UserEmail ='" + Session["user"] + "'";
                 SqlCommand command = new SqlCommand(s, connection);
                 command.ExecuteNonQuery();
                 Response.Redirect("Profile.aspx");
